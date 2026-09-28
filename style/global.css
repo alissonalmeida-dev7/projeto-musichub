@@ -60,3 +60,241 @@ button {
 .icone-btn.avatar {
   font-size: 32px;
 }
+
+/* ===== HEADER ===== */
+.cabecalho {
+  grid-area: cabecalho;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.logo {
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.busca {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 40%;
+  padding: 10px 20px;
+  border: 2px solid var(--vermelho);
+  border-radius: 30px;
+}
+
+.busca i { color: var(--vermelho); }
+.busca input {
+  flex: 1;
+  background: none;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 15px;
+}
+
+.acoes { display: flex; align-items: center; gap: 16px; }
+
+/* ===== MENU LATERAL ===== */
+.menu-lateral-esquerdo {
+  grid-area: menu;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+  padding-top: 20px;
+  background: #12122a;
+  border-radius: 16px;
+}
+
+.menu-lateral-esquerdo a {
+  color: var(--vermelho);
+  font-size: 26px;
+  opacity: 0.7;
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.menu-lateral-esquerdo a:hover { opacity: 1; transform: scale(1.1); }
+.menu-lateral-esquerdo a.ativo { opacity: 1; }
+.menu-lateral-esquerdo hr {
+  width: 30px;
+  border: none;
+  border-top: 2px solid var(--vermelho);
+}
+
+/* ===== PLAYER ASIDE ===== */
+.player-lateral {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 18px rgba(230, 57, 70, 0.35);
+}
+
+.player-atual {
+  padding: 14px;
+  border-radius: 14px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-red);
+  text-align: center;
+}
+
+.player-capa {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.player-titulo { margin-top: 10px; font-size: 15px; }
+.player-artista { font-size: 12px; color: var(--text-muted); }
+
+.player-progresso,
+.player-volume {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 12px;
+  font-size: 11px;
+  color: var(--vermelho);
+}
+.player-progresso input,
+.player-volume input {
+  flex: 1;
+  accent-color: var(--vermelho);
+}
+
+.player-controles {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+}
+.player-controles button,
+.fila-item button {
+  font-size: 18px;
+}
+.player-controles button:hover { transform: scale(1.2); }
+
+.player-fila {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  padding: 10px;
+  border-radius: 14px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-red);
+}
+
+.fila-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 4px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.fila-item:hover { background: var(--bg-card-hover); }
+
+.fila-item img {
+  width: 44px;
+  height: 44px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.fila-info {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+.fila-info strong,
+.fila-info span {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.fila-info strong { font-size: 13px; }
+.fila-info span { font-size: 10px; color: var(--text-muted); }
+
+/* ===== FOOTER ===== */
+.rodape {
+  margin-top: 60px;
+  padding: 0 4%;
+}
+
+.rodape-logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+.rodape-logo span { color: var(--vermelho); }
+
+.rodape-marca p {
+  margin-top: 4px;
+  font-size: 12px;
+  color: #ccc;
+}
+
+.rodape-colunas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "sobre legal senai"
+    "redes .     .";
+  gap: 24px;
+  margin-top: 28px;
+}
+
+.sobre { grid-area: sobre; }
+.legal { grid-area: legal; }
+.rodape-senai { grid-area: senai; }
+.redes { grid-area: redes; }
+
+.rodape-coluna {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.rodape-coluna h3 {
+  font-size: 15px;
+  margin-bottom: 4px;
+}
+
+.rodape-coluna a {
+  font-size: 12px;
+  color: #ccc;
+  transition: color 0.2s;
+}
+
+.rodape-coluna a:hover { color: var(--vermelho); }
+
+.rodape-senai img {
+  height: 32px;
+  width: auto;
+}
+
+.rodape-icones {
+  display: flex;
+  gap: 14px;
+}
+
+.rodape-icones a {
+  font-size: 20px;
+  color: var(--vermelho);
+}
+
+.rodape-icones a:hover { transform: scale(1.15); }
+
+.rodape-copy {
+  margin-top: 40px;
+  padding: 14px 0 6px;
+  border-top: 1px solid var(--vermelho);
+  text-align: center;
+  font-size: 11px;
+  color: var(--text-muted);
+}
