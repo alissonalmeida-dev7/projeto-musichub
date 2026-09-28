@@ -99,7 +99,7 @@
 }
 
 .musica-item:hover { 
-  background: var(--bg-card-hover); 
+  background: var(--fundo-card-hover); 
 }
 
 .musica-item img {
@@ -126,7 +126,7 @@
 
 .musica-info span { 
   font-size: 11px; 
-  color: var(--text-muted); 
+  color: var(--texto-suave); 
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -155,7 +155,7 @@
 .card-sub {
   display: block;
   font-size: 10px;
-  color: var(--text-muted);
+  color: var(--texto-suave);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;

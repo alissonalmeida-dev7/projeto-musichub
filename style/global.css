@@ -1,14 +1,14 @@
 /* ===== STYLE GUIDE & VARIÁVEIS ===== */
 :root {
   --vermelho: #e63946;
-  --bg-dark: #0a1622;
-  --bg-card: rgba(29, 53, 87, 0.35);
-  --bg-card-hover: rgba(29, 53, 87, 0.6);
-  --border-card: rgba(69, 123, 141, 0.25);
-  --border-glow: rgba(230, 57, 70, 0.4);
-  --text-primary: #ffffff;
-  --text-muted: #a0eee4;
-  --font-principal: 'Oswald', sans-serif;
+  --fundo-escuro: #0a1622;
+  --fundo-card: rgba(29, 53, 87, 0.35);
+  --fundo-card-hover: rgba(29, 53, 87, 0.6);
+  --borda-card: rgba(69, 123, 141, 0.25);
+  --borda-brilho: rgba(230, 57, 70, 0.4);
+  --texto-principal: #ffffff;
+  --texto-suave: #a0eee4;
+  --fonte-principal: 'Oswald', sans-serif;
 }
 
 /* ===== RESET & BASE ===== */
@@ -24,9 +24,9 @@ html, body {
 }
 
 body {
-  background-color: var(--bg-dark);
-  color: var(--text-primary);
-  font-family: var(--font-principal);
+  background-color: var(--fundo-escuro);
+  color: var(--texto-principal);
+  font-family: var(--fonte-principal);
   font-weight: 400;
 }
 
@@ -74,7 +74,7 @@ button:hover {
   padding: 24px 32px;
   border-radius: 24px;
   background: rgba(16, 29, 45, 0.85);
-  border: 1px solid rgba(230, 57, 70, 0.4);
+  border: 1px solid var(--borda-brilho);
   box-shadow: 0 0 15px rgba(230, 57, 70, 0.15);
 }
 
@@ -120,8 +120,8 @@ button:hover {
   background: none;
   border: none;
   outline: none;
-  color: var(--text-primary);
-  font-family: var(--font-principal);
+  color: var(--texto-principal);
+  font-family: var(--fonte-principal);
   font-size: 16px;
   letter-spacing: 0.5px;
 }
@@ -154,7 +154,7 @@ button:hover {
   padding: 24px 0;
   height: 100%;
   background: rgba(16, 29, 45, 0.85); 
-  border: 1px solid var(--border-glow); 
+  border: 1px solid var(--borda-brilho); 
   border-radius: 24px; 
   box-shadow: 0 0 15px rgba(230, 57, 70, 0.15); 
 }
@@ -212,15 +212,15 @@ button:hover {
   overflow: hidden;
   background: rgba(16, 29, 45, 0.85);
   border-radius: 24px;
-  border: 1px solid var(--border-glow);
+  border: 1px solid var(--borda-brilho);
   box-shadow: 0 0 15px rgba(230, 57, 70, 0.15);
 }
 
 .player-atual {
   padding: 12px;
   border-radius: 16px;
-  background: var(--bg-card);
-  border: 1px solid var(--border-card);
+  background: var(--fundo-card);
+  border: 1px solid var(--borda-card);
   text-align: center;
 }
 
@@ -239,7 +239,7 @@ button:hover {
 
 .player-artista { 
   font-size: 11px; 
-  color: var(--text-muted); 
+  color: var(--texto-suave); 
   margin-top: 2px;
 }
 
@@ -282,8 +282,8 @@ button:hover {
   overflow-y: auto;
   padding: 8px;
   border-radius: 16px;
-  background: var(--bg-card);
-  border: 1px solid var(--border-card);
+  background: var(--fundo-card);
+  border: 1px solid var(--borda-card);
 }
 
 .fila-item {
@@ -297,7 +297,7 @@ button:hover {
 }
 
 .fila-item:hover { 
-  background: var(--bg-card-hover); 
+  background: var(--fundo-card-hover); 
 }
 
 .fila-item img {
@@ -324,7 +324,7 @@ button:hover {
 
 .fila-info span { 
   font-size: 10px; 
-  color: var(--text-muted); 
+  color: var(--texto-suave); 
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -347,7 +347,7 @@ button:hover {
 .rodape-marca p {
   margin-top: 4px;
   font-size: 11px;
-  color: var(--text-muted);
+  color: var(--texto-suave);
 }
 
 .rodape-colunas {
