@@ -333,3 +333,103 @@ body {
   font-size: 11px;
   color: #aaa;
 }
+
+/* ===== feature/secoes-musicas ===== */
+.secao-titulo {
+  font-family: 'Oswald', Arial, sans-serif;
+  font-size: 26px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+.secao-titulo span { color: var(--vermelho); }
+
+/* ----- grid de músicas recomendadas (3 colunas) ----- */
+.musicas-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px 28px;
+}
+
+.musica-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 4px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.musica-item:hover { background: rgba(255, 255, 255, 0.06); }
+
+.musica-item img {
+  width: 44px;
+  height: 44px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.musica-info {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+.musica-info strong,
+.musica-info span {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.musica-info strong { font-size: 14px; }
+.musica-info span { font-size: 11px; color: #aaa; }
+
+.musica-item button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #aaa;
+}
+
+/* ----- carrossel de cards (Novidades / Estações) ----- */
+.cards-carrossel {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.card-capa img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 1px solid rgba(230, 57, 70, 0.4);
+}
+.card-nome {
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.card-sub {
+  display: block;
+  font-size: 11px;
+  color: #aaa;
+}
+
+/* ----- carrossel de artistas (círculos) ----- */
+.artistas-carrossel {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  text-align: center;
+}
+.artista-item img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid var(--vermelho);
+  box-shadow: 0 0 15px rgba(230, 57, 70, 0.4);
+}
+.artista-item p {
+  margin-top: 8px;
+  font-size: 13px;
+}
