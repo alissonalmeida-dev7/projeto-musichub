@@ -1,0 +1,94 @@
+/* ===== LAYOUT GERAL ===== */
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  background: #0d0d1a;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 70px 1fr 260px;
+  grid-template-rows: 70px 1fr;
+  grid-template-areas:
+    "cabecalho cabecalho cabecalho"
+    "menu      conteudo  player";
+  gap: 8px;
+  height: 100vh;
+  padding: 8px;
+}
+
+/* ===== HEADER ===== */
+.cabecalho {
+  grid-area: cabecalho;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.logo {
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.busca {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 40%;
+  padding: 10px 20px;
+  border: 2px solid #e63946;
+  border-radius: 30px;
+}
+.busca i { color: #e63946; }
+.busca input {
+  flex: 1;
+  background: none;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 15px;
+}
+
+.acoes { display: flex; align-items: center; gap: 16px; }
+.icone-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #e63946;
+  font-size: 24px;
+}
+.icone-btn.avatar { font-size: 32px; }
+
+/* ===== MENU LATERAL ===== */
+.menu-lateral-esquerdo {
+  grid-area: menu;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+  padding-top: 20px;
+  background: #12122a;
+  border-radius: 16px;
+}
+.menu-lateral-esquerdo a {
+  color: #e63946;
+  font-size: 26px;
+  text-decoration: none;
+  opacity: 0.7;
+  transition: opacity 0.2s, transform 0.2s;
+}
+.menu-lateral-esquerdo a:hover { opacity: 1; transform: scale(1.1); }
+.menu-lateral-esquerdo a.ativo { opacity: 1; }
+.menu-lateral-esquerdo hr {
+  width: 30px;
+  border: none;
+  border-top: 2px solid #e63946;
+}
