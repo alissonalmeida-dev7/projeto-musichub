@@ -255,3 +255,81 @@ body {
 }
 .fila-info strong { font-size: 13px; }
 .fila-info span { font-size: 10px; color: #aaa; }
+
+/* ===== feature/footer ===== */
+.rodape {
+  margin-top: 60px;
+  padding: 0 4%;
+}
+
+/* ----- marca ----- */
+.rodape-logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+.rodape-logo span { color: var(--vermelho); }
+
+.rodape-marca p {
+  margin-top: 4px;
+  font-size: 12px;
+  color: #ccc;
+}
+
+/* ----- colunas ----- */
+.rodape-colunas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "sobre legal senai"
+    "redes .     .";
+  gap: 24px;
+  margin-top: 28px;
+}
+.sobre { grid-area: sobre; }
+.legal { grid-area: legal; }
+.rodape-senai { grid-area: senai; }
+.redes { grid-area: redes; }
+
+.rodape-coluna {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.rodape-coluna h3 {
+  font-size: 15px;
+  margin-bottom: 4px;
+}
+.rodape-coluna a {
+  font-size: 12px;
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.rodape-coluna a:hover { color: var(--vermelho); }
+
+/* ----- logo do SENAI ----- */
+.rodape-senai img {
+  height: 32px;
+  width: auto;
+}
+
+/* ----- redes sociais ----- */
+.rodape-icones {
+  display: flex;
+  gap: 14px;
+}
+.rodape-icones a {
+  font-size: 20px;
+  color: var(--vermelho);
+}
+.rodape-icones a:hover { transform: scale(1.15); }
+
+/* ----- copyright + linha ----- */
+.rodape-copy {
+  margin-top: 40px;
+  padding: 14px 0 6px;
+  border-top: 1px solid var(--vermelho);
+  text-align: center;
+  font-size: 11px;
+  color: #aaa;
+}
