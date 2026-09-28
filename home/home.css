@@ -92,3 +92,61 @@ body {
   border: none;
   border-top: 2px solid #e63946;
 }
+
+/* ===== feature/banner-carrossel ===== */
+.banner-chamada { font-size: 32px; margin-bottom: 20px; }
+.banner-chamada span { color: var(--vermelho); }
+
+.banner-carrossel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-slides {
+  position: relative;
+  width: 70%;
+  height: 300px;
+}
+
+.banner-slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;                 /* escondido por padrão */
+  transition: opacity 0.4s;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 0 25px rgba(230, 57, 70, 0.5);
+}
+.banner-slide.ativo { opacity: 1; }   /* só o ativo aparece */
+
+.banner-slide img { width: 100%; height: 100%; object-fit: cover; }
+
+.banner-seta {
+  position: absolute;
+  background: none;
+  border: none;
+  color: var(--vermelho);
+  font-size: 28px;
+  cursor: pointer;
+  z-index: 2;
+}
+.banner-seta.esquerda { left: 5%; }
+.banner-seta.direita  { right: 5%; }
+
+.banner-titulo {
+  text-align: center;
+  color: var(--vermelho);
+  font-size: 32px;
+  font-weight: bold;
+  margin-top: 16px;
+}
+
+.conteudo-principal {
+  grid-area: conteudo;
+  overflow-y: auto;
+  padding: 30px;
+  border-radius: 16px;
+  background: linear-gradient(to bottom, #1a1a3d, #0a0a18);
+}
