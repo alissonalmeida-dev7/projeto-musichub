@@ -68,8 +68,66 @@
 
                 <p class="banner-titulo">SERTANEJO</p>
             </section>
-
         </main>
+
+        <aside class="player-lateral">
+
+            <section class="player-atual">
+                <img class="player-capa" src="../imgs/capa-invisivel.jpg" alt="Capa de Invisível pt.2">
+                <h3 class="player-titulo">Invisível pt.2</h3>
+                <p class="player-artista">Veigh</p>
+
+                <div class="player-progresso">
+                    <span>3:30</span>
+                    <input type="range" min="0" max="100" value="80" aria-label="Progresso da música">
+                    <span>4:10</span>
+                </div>
+
+                <div class="player-controles">
+                    <button aria-label="Aleatório"><i class="fa-solid fa-shuffle"></i></button>
+                    <button aria-label="Anterior"><i class="fa-solid fa-backward-step"></i></button>
+                    <button aria-label="Pausar"><i class="fa-solid fa-pause"></i></button>
+                    <button aria-label="Próxima"><i class="fa-solid fa-forward-step"></i></button>
+                    <button aria-label="Repetir"><i class="fa-solid fa-repeat"></i></button>
+                </div>
+
+                <div class="player-volume">
+                    <i class="fa-solid fa-volume-high"></i>
+                    <input type="range" min="0" max="100" value="60" aria-label="Volume">
+                </div>
+            </section>
+
+            <section class="player-fila">
+                <ul class="fila-lista">
+                    <li class="fila-item">
+                        <img src="../imgs/capa-talvez.jpg" alt="">
+                        <div class="fila-info">
+                            <strong>Talvez Você P...</strong>
+                            <span>Veigh, Supernova Ent</span>
+                        </div>
+                        <button aria-label="Mais opções"><i class="fa-solid fa-ellipsis"></i></button>
+                    </li>
+                    <li class="fila-item">
+                        <img src="../imgs/capa-imagina.jpg" alt="">
+                        <div class="fila-info">
+                            <strong>Imagina Esse C...</strong>
+                            <span>Matuê, Veigh</span>
+                        </div>
+                        <button aria-label="Mais opções"><i class="fa-solid fa-ellipsis"></i></button>
+                    </li>
+                    <li class="fila-item">
+                        <img src="../imgs/capa-ballena.jpg" alt="">
+                        <div class="fila-info">
+                            <strong>Ballena</strong>
+                            <span>Vulgo FK, MC PH, Veigh</span>
+                        </div>
+                        <button aria-label="Mais opções"><i class="fa-solid fa-ellipsis"></i></button>
+                    </li>
+                    <!-- repetir o <li> para as outras músicas da fila -->
+                </ul>
+            </section>
+
+        </aside>
     </div>
 
 </body>
