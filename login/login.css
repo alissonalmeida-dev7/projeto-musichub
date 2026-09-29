@@ -132,7 +132,7 @@ input,
 }
 
 .campo label {
-    color: var(--azul-escuro);
+    color: var(--texto-principal);
     font-size: 1em;
     font-weight: 700;
 }
