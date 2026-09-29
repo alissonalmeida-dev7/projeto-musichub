@@ -1,0 +1,79 @@
+.banner-chamada {
+    text-align: left;
+    font-size: 28px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.banner-chamada span {
+    color: var(--vermelho);
+}
+
+.retangulo {
+    grid-area: player;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 24px;
+    overflow: hidden;
+    border-radius: 20px;
+    background: var(--fundo-painel);
+    border: 1px solid var(--borda-card);
+}
+
+.pequeno-titulo {
+    display: flex;
+    justify-self: flex-start;
+}
+
+.caixas {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.retangulo h2 {
+    display: flex;
+    justify-content: center;
+}
+
+.retangulo span {
+    display: flex;
+    color: darkgrey;
+    justify-content: center;
+}
+
+.retangulo2 {
+    grid-area: player;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 24px;
+    overflow: hidden;
+    border-radius: 20px;
+    background: var(--fundo-painel);
+    border: 1px solid var(--borda-card);
+}
+
+.retangulo2 span {
+    display: flex;
+    color: var(--vermelho);
+    justify-content: flex-start;
+    font-size: 25px;
+}
+
+.retangulo2 h2 {
+    display: flex;
+    font-size: 50px;
+}
+
+.informacoes-retangulo::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  margin: 0 auto;
+  background: var(--vermelho);
+}
+
