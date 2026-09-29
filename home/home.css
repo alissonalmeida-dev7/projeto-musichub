@@ -186,6 +186,13 @@
 
 .card-capa {
   text-align: center;
+  padding: 6px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.card-capa:hover {
+    background: var(--fundo-card-hover); 
 }
 
 .card-capa img {
@@ -216,6 +223,16 @@
   grid-template-columns: repeat(4, 1fr);
   gap: 16px;
   text-align: center;
+}
+
+.artista-item {
+  padding: 6px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.artista-item:hover {
+    background: var(--fundo-card-hover); 
 }
 
 .artista-item img {
