@@ -8,14 +8,17 @@
     <link rel="stylesheet" href="favoritos.css">
     <link rel="stylesheet" href="../style/global.css">
 
+    <link rel="shortcut icon" href="../imgs/Logo_superior_esquerdo-MusicHub.svg" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <div class="layout">
+
+        <!--! HEADER -->
         <header class="cabecalho">
-            <a href="#" class="logo">
+            <a href="../home/home.html" class="logo">
                 <img src="../imgs/Logo_superior_esquerdo-MusicHub.svg" alt="MusicHUB Logo">
             </a>
 
@@ -30,11 +33,12 @@
             </div>
         </header>
 
+        <!--! ASIDE (ESQUERDO) -->
         <nav class="menu-lateral-esquerdo">
             <div class="menu-grupo">
                 <a href="../home/home.html"><i class="fa-solid fa-house"></i></a>
                 <a href="#"><i class="fa-regular fa-compass"></i></a>
-                <a href="#" class="ativo"><i class="fa-regular fa-heart"></i></a>
+                <a href="#" class="favoritos ativo"><i class="fa-regular fa-heart"></i></a>
                 <a href="#"><img src="../imgs/musicas.svg" alt="Músicas"></a>
             </div>
 
@@ -46,8 +50,10 @@
             </div>
         </nav>
 
+        <!--! CONTEUDO PRINCIPAL (FAVORITOS) -->
         <main class="conteudo-principal">
 
+            <!--! PLAYLISTS -->
             <section class="playlists">
                 <h2 class="banner-chamada">PLAY<span>LISTS</span></h2>
 
@@ -84,17 +90,18 @@
                 </div>
             </section>
 
+            <!--! ARTISTAS -->
             <section class="artistas-favoritos">
                 <h2 class="titulo-secao">ARTISTAS <span>FAVORITOS</span></h2>
 
                 <div class="artistas-grid">
                     <article class="artista-item">
-                        <img src="../imgs/artistas-Matue.png" alt="">
+                        <img src="../imgs/artistas-matuezao.png" alt="">
                         <p>Matue</p>
                     </article>
 
                     <article class="artista-item">
-                        <img src="../imgs/artistas-pericles.png" alt="">
+                        <img src="../imgs/artistas-periclao_novo.png" alt="">
                         <p>Pericles</p>
                     </article>
 
@@ -110,6 +117,7 @@
                 </div>
             </section>
 
+            <!--! MUSICAS -->
             <section class="musicas-favoritas">
                 <h2 class="titulo-secao">MÚSICAS <span>FAVORITAS</span></h2>
 
@@ -161,6 +169,7 @@
                 </div>
             </section>
 
+            <!--! ALBUNS -->
             <section class="albuns-favoritos">
                 <h2 class="titulo-secao">ÁLBUNS <span>FAVORITOS</span></h2>
 
@@ -204,6 +213,7 @@
                 </div>
             </section>
 
+            <!--! FOOTER -->
             <footer class="rodape">
                 <div class="rodape-marca">
                     <h2 class="rodape-logo">Music<span>HUB</span></h2>
@@ -241,6 +251,7 @@
             </footer>
         </main>
 
+        <!--! PLAYER (ASIDE DIREITO) -->
         <aside class="player-lateral">
 
             <section class="player-atual">

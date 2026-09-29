@@ -31,6 +31,30 @@
 
 .favorito-icone {
     display: grid;
+    place-items: center;
+    position: absolute;
+
+    left: 90%;
+    bottom: 0%;
+
+    font-size: 30px;
+
+    height: 40px;
+    width: 40px;
+
+    box-shadow: 5px 5px 2px 3px rgba(0, 0, 0, 0.3);
+
+    background-color: var(--azul-escuro);
+    border-radius: 5px;
+}
+
+.favorito-icone i {
+    font-weight: 900;
+    color: var(--vermelho);
+}
+
+.musica-imagem {
+    position: relative;
 }
 
 
