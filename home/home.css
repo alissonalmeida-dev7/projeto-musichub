@@ -186,6 +186,13 @@
 
 .card-capa {
   text-align: center;
+  padding: 6px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.card-capa:hover {
+    background: var(--fundo-card-hover); 
 }
 
 .card-capa img {
@@ -218,6 +225,16 @@
   text-align: center;
 }
 
+.artista-item {
+  padding: 6px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.artista-item:hover {
+    background: var(--fundo-card-hover); 
+}
+
 .artista-item img {
   width: 100%;
   aspect-ratio: 1 / 1;
@@ -231,6 +248,17 @@
   margin-top: 8px;
   font-size: 12px;
   font-weight: 500;
+}
+
+.artista-item:hover p {
+  text-decoration: underline;
+}
+
+.musica-info span:hover,
+.card-sub:hover,
+.fila-info span:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 /* linha vermelha separando as seções */
