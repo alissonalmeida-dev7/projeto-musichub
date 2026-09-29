@@ -5,6 +5,7 @@
 }
 
 .banner-chamada { 
+  text-align: left;
   font-size: 28px; 
   font-weight: 500;
   letter-spacing: 1px;
@@ -25,7 +26,7 @@
 
 .banner-slides {
   position: relative;
-  width: 70%;
+  width: 79%;
   height: 100%;
 }
 
@@ -34,9 +35,44 @@
   inset: 0;
   opacity: 0;
   transition: opacity 0.4s ease-in-out;
-  border-radius: 24px;
+  border-radius: 50px;
   overflow: hidden;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 10px var(--vermelho);
+}
+
+.banner-lateral {
+  position: absolute;
+  background: #21262a;
+  border-radius: 50px;
+  box-shadow: 0 4px 10px var(--vermelho);
+}
+
+.banner-lateral.externo-esq {
+  left: 0;
+  width: 66%;
+  top: 15%;
+  bottom: 15%;
+}
+
+.banner-lateral.externo-dir {
+  right: 0;
+  width: 66%;
+  top: 15%;
+  bottom: 15%;
+}
+
+.banner-lateral.interno-esq {
+  left: 4.5%;
+  width: 69%;
+  top: 6%;
+  bottom: 6%;
+}
+
+.banner-lateral.interno-dir {
+  right: 3.3%;
+  width: 69%;
+  top: 6%;
+  bottom: 6%;
 }
 
 .banner-slide.ativo { 
@@ -51,19 +87,28 @@
 
 .banner-seta {
   position: absolute;
-  font-size: 24px;
+  top: 50%;
+  z-index: 3;       
+  transform: translate(-50%, -50%);
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--fundo-escuro);
+  font-size: 20px;
   color: var(--vermelho);
-  z-index: 2;
 }
 
-.banner-seta.esquerda { left: 2%; }
-.banner-seta.direita  { right: 2%; }
+.banner-seta.esquerda { left: 10.5%; }
+.banner-seta.direita  { left: 89.5%; }
 
 .banner-titulo {
   text-align: center;
   color: var(--vermelho);
   font-size: 28px;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 1.5px;
   margin-top: 14px;
 }
@@ -80,7 +125,7 @@
   color: var(--vermelho); 
 }
 
-/* MÚSICAS RECOMENDADAS (3 COLUNAS) */
+/* MÚSICAS RECOMENDADAS */
 .musicas-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -139,6 +184,10 @@
   gap: 16px;
 }
 
+.card-capa {
+  text-align: center;
+}
+
 .card-capa img {
   width: 100%;
   aspect-ratio: 1 / 1;
@@ -161,7 +210,7 @@
   text-overflow: ellipsis;
 }
 
-/* ARTISTAS (CIRCULARES) */
+/* ARTISTAS */
 .artistas-carrossel {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -174,11 +223,32 @@
   aspect-ratio: 1 / 1;
   object-fit: cover;
   border-radius: 50%;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  border: 3px solid var(--vermelho);
+  box-shadow: 0 4px 25px var(--vermelho);
 }
 
 .artista-item p {
   margin-top: 8px;
   font-size: 12px;
   font-weight: 500;
+}
+
+/* linha vermelha separando as seções */
+.musicas::before,
+.novidades::before,
+.artistas::before,
+.estacoes::before {
+  content: "";
+  display: block;
+  width: 68%;
+  height: 1px;
+  margin: 0 auto;
+  background: var(--vermelho);
+}
+
+.musicas,
+.novidades,
+.artistas,
+.estacoes {
+  margin-top: 40px;
 }

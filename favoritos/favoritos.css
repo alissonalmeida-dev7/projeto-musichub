@@ -1,0 +1,146 @@
+/* ============================================ */
+/* GERAL */
+/* ============================================ */
+
+/* ===== TITULOS ===== */
+.banner-chamada { 
+  text-align: left;
+  font-size: 28px; 
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-bottom: 20px; 
+}
+
+.banner-chamada span { 
+  color: var(--vermelho); 
+}
+.titulo-secao { 
+    text-align: left;
+    font-size: 28px; 
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 20px; 
+    margin-top: 20px;
+}
+
+.titulo-secao span { 
+  color: var(--vermelho); 
+}
+
+/* ===== ICONE DE FAVORITO ===== */
+
+.favorito-icone {
+    display: grid;
+}
+
+
+/* ============================================ */
+/* PLAYLIST */
+/* ============================================ */
+
+.playlist-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+}
+
+.playlist-info {
+    display: flex;
+    justify-content: center;
+    font-size: 1.3em;
+}
+
+.playlist-item img {
+    height: 250px;
+    width: 250px;
+}
+
+/* ============================================ */
+/* ARTISTAS FAVORITOS */
+/* ============================================ */
+
+.artistas-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    gap: 1.2em;
+}
+
+.artista-item img {
+  width: 100%;
+  height: 100%;
+
+  max-width: 300px;
+  max-height: 300px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid var(--vermelho);
+  box-shadow: 0 4px 25px var(--vermelho);
+}
+
+.artista-item p {
+    display: flex;
+    justify-content: center;
+    font-size: 1.3em;
+}
+
+/* ============================================ */
+/* MUSICAS FAVORITOS */
+/* ============================================ */
+
+.musicas-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+}
+
+.musica-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3em;
+}
+
+.musica-info strong {
+    font-size: 1.3em;
+}
+
+.musica-info p {
+    font-size: 0.8em;
+}
+
+.musica-item img {
+    height: 250px;
+    width: 250px;
+}
+
+/* ============================================ */
+/* ALBUNS FAVORITOS */
+/* ============================================ */
+
+.albuns-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+}
+
+.albun-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3em;
+}
+
+.albun-info strong {
+    font-size: 1.3em;
+}
+
+.albun-info p {
+    font-size: 0.8em;
+}
+
+.albun-item img {
+    height: 250px;
+    width: 250px;
+}
