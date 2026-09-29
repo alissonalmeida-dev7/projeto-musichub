@@ -250,6 +250,17 @@
   font-weight: 500;
 }
 
+.artista-item:hover p {
+  text-decoration: underline;
+}
+
+.musica-info span:hover,
+.card-sub:hover,
+.fila-info span:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 /* linha vermelha separando as seções */
 .musicas::before,
 .novidades::before,

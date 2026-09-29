@@ -47,6 +47,8 @@ header.cabecalho-login .logo img {
     width: auto ;
     max-height: none;
     max-width: none;
+    flex-shrink: 0;   
+    filter: drop-shadow(0 0 6px color-mix(in srgb, var(--vermelho) 80%, transparent));   
 }
 
 header.cabecalho-login .icone-btn.home {
@@ -83,6 +85,17 @@ header.cabecalho-login .icone-btn.home {
 
 .login-cabecalho-login p {
     font-size: 1em;
+}
+
+.home-icone {
+  opacity: 0.8;
+  transition: all 0.2s;
+}
+
+.home-icone:hover {
+  opacity: 1;
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 6px color-mix(in srgb, var(--vermelho) 80%, transparent));
 }
 
 /* FORMULARIO */
