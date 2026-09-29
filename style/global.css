@@ -141,8 +141,15 @@ button:hover {
   padding: 10px 20px;
   border: 1px solid var(--vermelho);
   border-radius: 999px;
-  background: color-mix(in srgb, var(--fundo-escuro) 60%, transparent);
+  background-color: var(--fundo-escuro);
   box-shadow: 0 0 6px var(--vermelho);
+  transition: background 0.9s ease, box-shadow 0.9s ease;
+}
+
+.busca:hover,
+.busca:focus-within {
+  background-color: color-mix(in srgb, var(--texto-suave) 35%, var(--fundo-escuro));
+  box-shadow: 0 0 12px var(--vermelho);
 }
 
 .busca i {
