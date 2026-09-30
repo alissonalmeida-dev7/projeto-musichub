@@ -1,0 +1,183 @@
+/* ===== CONTAINER DE MUSICA ===== */
+.caixas-conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.musica-principal {
+    padding: 16px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    border: 2px solid var(--borda-card);
+}
+
+.capa img {
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+}
+
+.album {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+}
+
+.infos-album {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.infos-album .tipo {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.infos-album h3 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.detalhes {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+/* bolinha antes de cada item, menos o primeiro */
+.detalhes span + span::before {
+    content: "";
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    margin-right: 10px;
+    border-radius: 50%;
+    background: var(--texto-principal);
+    vertical-align: middle;
+}
+
+.infos-icones {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.infos-icones i {
+    font-size: 35px;
+    color: var(--vermelho);
+    cursor: pointer;
+    opacity: 0.8;
+    transition: all 0.2s;
+}
+
+.infos-icones i:hover {
+    opacity: 1;
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 6px color-mix(in srgb, var(--vermelho) 80%, transparent));
+}
+
+/* ===== RECOMENDAÇÕES ===== */
+
+.cima,
+.baixo {
+    display: flex;
+    flex-direction: row;
+    gap: 9px;                  
+    justify-content: center;
+}
+
+.recomendacoes {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    border-radius: 20px;
+    border: 2px solid var(--borda-card);
+    gap: 10px;
+}
+
+.recomendacoes .titulo {
+    display: grid;
+    grid-template-columns: 1fr 180px 89px;   
+    column-gap: 20px;
+    align-items: center;
+    padding: 0 8px 12px;
+}
+
+.recomendacoes hr {
+    border: none;
+    border-top: 1px solid var(--vermelho);
+    margin: 0 0 16px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.titulo-texto {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: var(--texto-principal);
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.titulo-texto span {
+    width: 40px;   
+}
+
+.titulo-texto h2 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+.capa-recomendacoes img{
+    height: 250px;
+    width: 250px;
+    border-radius: 10px;
+}
+
+.info-musica {
+    text-align: center ;
+}
+
+.rec-cima {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.outras-doartista {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.capa-recomendacoes:hover{
+    cursor: pointer;
+}
+
+.capa-recomendacoes img {
+    box-shadow: 3px 3px 8px var(--vermelho);
+}
+
+
+
+.musicas-recomendadas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 8px;                 
+    border-radius: 14px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.musicas-recomendadas:hover {
+    background-color: var(--fundo-card-hover);
+}
