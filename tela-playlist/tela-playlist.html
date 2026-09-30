@@ -33,7 +33,7 @@
 
         <nav class="menu-lateral-esquerdo">
             <div class="menu-grupo">
-                <a href="#" class="ativo"><i class="fa-solid fa-house"></i></a>
+                <a href="../home/home.html" class="home-icone"><img src="../imgs/home.svg" alt="Home"></a>
                 <a href="#"><i class="fa-regular fa-compass"></i></a>
                 <a href="#"><i class="fa-regular fa-heart"></i></a>
                 <a href="#"><img src="../imgs/musicas.svg" alt="Músicas"></a>
@@ -54,20 +54,24 @@
                 <div class="musica-principal">
 
                     <div class="capa">
-                        <img src="../imgs/musica_recomenda-infiel.png" alt="">
+                        <img src="../imgs/Playlist.png" alt="">
                     </div>
 
                     <div class="album">
                         <div class="infos-album">
-                            <p>Álbum/Playlist</p>
-                            <h3>Nome do Álbum/Playlist</h3>
-                            <p>Nome do artista - 2002 - 21 músicas - 1h50m</p>
+                            <p class="tipo">Playlist</p>
+                            <h3>Playlist do Maniezo</h3>
+                            <p class="detalhes">
+                                <span>Maniezo</span>
+                                <span>2026</span>
+                                <span>7 músicas, 1h50m</span>
+                            </p>
                         </div>
 
                         <div class="infos-icones">
                             <i class="fa-solid fa-play"></i>
-                            <i class="fa-regular fa-heart"></i>
                             <i class="fa-solid fa-shuffle"></i>
+                            <i class="fa-regular fa-circle-down"></i>
                             <i class="fa-solid fa-ellipsis"></i>
                         </div>
                     </div>
@@ -77,24 +81,168 @@
 
                 <div class="recomendacoes">
                     <div class="titulo">
-                        <span>#</span>
-                        <h2>Título</h2>
-                        <i class="fa-solid fa-clock"></i>
+                        <div class="titulo-texto">
+                            <span>#</span>
+                            <h2>Título</h2>
+                        </div>
+                        <span class="titulo-data">Adicionada em</span>
+                        <div class="icone-relogio">
+                            <i class="fa-solid fa-clock"></i>
+                        </div>
                     </div>
 
                     <hr> <!-- Linha de divisao -->
 
                     <div class="musicas-recomendadas">
-                        
+                        <div class="musica-linha">
+                            <span class="numero">1</span>
+                            <img class="musica-capa" src="../imgs/Feijoada Completa.png" alt="">
+                            <div class="musica-textos">
+                                <strong>Feijoada Completa</strong>
+                                <span>Chico Buarque</span>
+                            </div>
+                            <span class="adicionada">30 de set. de 2026</span>
+                            <i class="fa-regular fa-heart"></i>
+                            <span class="duracao">2:50</span>
+                        </div>
+
+                        <div class="musica-linha">
+                            <span class="numero">2</span>
+                            <img class="musica-capa" src="../imgs/racionais.png" alt="">
+                            <div class="musica-textos">
+                                <strong>Negro drama</strong>
+                                <span>Racionais MC's</span>
+                            </div>
+                            <span class="adicionada">30 de set. de 2026</span>
+                            <i class="fa-regular fa-heart"></i>
+                            <span class="duracao">6:51</span>
+                        </div>
+
+                        <div class="musica-linha">
+                            <span class="numero">3</span>
+                            <img class="musica-capa" src="../imgs/Pandemia.png" alt="">
+                            <div class="musica-textos">
+                                <strong>Pandemia</strong>
+                                <span>Mc Kevin</span>
+                            </div>
+                            <span class="adicionada">30 de set. de 2026</span>
+                            <i class="fa-regular fa-heart"></i>
+                            <span class="duracao">2:19</span>
+                        </div>
+
+                        <div class="musica-linha">
+                            <span class="numero">4</span>
+                            <img class="musica-capa" src="../imgs/Thunderstruck.png" alt="">
+                            <div class="musica-textos">
+                                <strong>Thunderstruck</strong>
+                                <span>AC/DC</span>
+                            </div>
+                            <span class="adicionada">30 de set. de 2026</span>
+                            <i class="fa-regular fa-heart"></i>
+                            <span class="duracao">4:52</span>
+                        </div>
+
+                        <div class="musica-linha">
+                            <span class="numero">5</span>
+                            <img class="musica-capa" src="../imgs/musica-recomenda-Terapia.png" alt="">
+                            <div class="musica-textos">
+                                <strong>Terapia</strong>
+                                <span>Mc Kevin</span>
+                            </div>
+                            <span class="adicionada">30 de set. de 2026</span>
+                            <i class="fa-regular fa-heart"></i>
+                            <span class="duracao">3:32</span>
+                        </div>
+
+                        <div class="musica-linha">
+                            <span class="numero">6</span>
+                            <img class="musica-capa" src="../imgs/musica_recomenda-infiel.png" alt="">
+                            <div class="musica-textos">
+                                <strong>Infiel</strong>
+                                <span>Marilia Mendonça</span>
+                            </div>
+                            <span class="adicionada">30 de set. de 2026</span>
+                            <i class="fa-regular fa-heart"></i>
+                            <span class="duracao">3:22</span>
+                        </div>
+
+                        <div class="musica-linha">
+                            <span class="numero">7</span>
+                            <img class="musica-capa" src="../imgs/musica_recomenda-Backstage.png" alt="">
+                            <div class="musica-textos">
+                                <strong>Backstage</strong>
+                                <span>Matue</span>
+                            </div>
+                            <span class="adicionada">30 de set. de 2026</span>
+                            <i class="fa-regular fa-heart"></i>
+                            <span class="duracao">2:19</span>
+                        </div>
                     </div>
 
                 </div>
 
             </div>
 
+            <section class="sugestoes">
+                <h2 class="sugestoes-titulo">RECOMENDAÇÕES</h2>
+                <p class="sugestoes-sub">Com base no que está nesta playlist</p>
 
+                <div class="sugestoes-grid">
+                    <div class="sugestao-item">
+                        <img src="../imgs/aside_direito-Loucura.png" alt="">
+                        <div class="sugestao-info">
+                            <strong>Loucura</strong>
+                            <span>Borges, Mc Cabelinho, Veigh</span>
+                        </div>
+                        <button class="btn-adicionar">Adicionar</button>
+                    </div>
 
+                    <div class="sugestao-item">
+                        <img src="../imgs/aside_direito-Novo_balanco.png" alt="">
+                        <div class="sugestao-info">
+                            <strong>Novo balanço</strong>
+                            <span>Veigh</span>
+                        </div>
+                        <button class="btn-adicionar">Adicionar</button>
+                    </div>
 
+                    <div class="sugestao-item">
+                        <img src="../imgs/aside_direito-Sal_e_pimenta.png" alt="">
+                        <div class="sugestao-info">
+                            <strong>Sal e pimenta</strong>
+                            <span>Kayblack, Veigh</span>
+                        </div>
+                        <button class="btn-adicionar">Adicionar</button>
+                    </div>
+
+                    <div class="sugestao-item">
+                        <img src="../imgs/aside_direito-Pros_menor_da_nova.png" alt="">
+                        <div class="sugestao-info">
+                            <strong>Pros menor da nova</strong>
+                            <span>G.A, Veigh, Mc Morena, Supernova Ent</span>
+                        </div>
+                        <button class="btn-adicionar">Adicionar</button>
+                    </div>
+
+                    <div class="sugestao-item">
+                        <img src="../imgs/musica_recomenda-Artista_generico.png" alt="">
+                        <div class="sugestao-info">
+                            <strong>Artista Genérico</strong>
+                            <span>Veigh</span>
+                        </div>
+                        <button class="btn-adicionar">Adicionar</button>
+                    </div>
+
+                    <div class="sugestao-item">
+                        <img src="../imgs/musica_recomenda-Anti-amor.png" alt="">
+                        <div class="sugestao-info">
+                            <strong>Anti-Amor - Ao Vivo</strong>
+                            <span>Gustavo Mioto, Jorge & Matheus</span>
+                        </div>
+                        <button class="btn-adicionar">Adicionar</button>
+                    </div>
+                </div>
+            </section>
 
             <footer class="rodape">
                 <div class="rodape-marca">

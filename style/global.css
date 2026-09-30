@@ -403,7 +403,7 @@ filter: drop-shadow(0 0 6px color-mix(in srgb, var(--vermelho) 80%, transparent)
 
 /* ===== FOOTER ===== */
 .rodape {
-  margin-top: 140px;
+  margin-top: 100px;
   padding: 20px 0 10px;
   border-top: 1px solid var(--vermelho);
   max-width: 80%;
