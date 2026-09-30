@@ -1,0 +1,65 @@
+/* ============================================ */
+/* GERAL */
+/* ============================================ */
+
+/* ===== TITULOS ===== */
+
+.banner-chamada { 
+  text-align: left;
+  font-size: 28px; 
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-bottom: 20px; 
+}
+
+.banner-chamada span { 
+  color: var(--vermelho); 
+}
+
+
+/* ============================================ */
+/* IMAGEM */
+/* ============================================ */
+
+.cadastro-artista {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* .cadastro-artista img {
+
+} */
+
+/* ============================================ */
+/* FORM */
+/* ============================================ */
+
+.infos-artista {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+
+    grid-template-areas: 
+    "genero" "nacionalidade"
+    "nasc" "genero-musi";
+
+    justify-items: end;
+    align-items: center;
+}
+
+/* .genero {
+    grid-area: genero;
+}
+
+.nacionalidade {
+    grid-area: nacionalidade;
+}
+
+.nasc {
+    grid-area: nasc;
+}
+
+.genero-musi {
+    grid-area: genero-musi;
+} */
