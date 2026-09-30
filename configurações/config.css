@@ -1,0 +1,239 @@
+.configuracoes {
+  padding: 24px;
+  width: 1100px;
+  margin: 0 auto;
+}
+
+/* == TITULO ==*/
+.configuracoes-titulo {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+.configuracoes-aba {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.item-aba {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.item-aba-ativa {
+    color: #ff4d4d;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.item-aba:hover {
+  color: #ff4d4d;
+}
+
+.divisao {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    margin: 0 auto;
+    background: #ffffff;
+}
+
+.grid-seu-email {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  align-items: start;
+  margin-top: 30px;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.email-colunas {
+  display: flex;
+  flex-direction: column;
+}
+
+.configuracoes-titulos {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0 0 15px 0;
+  margin-left: 00px;
+}
+
+.configuracoes-titulo {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0 0 15px 0;
+  margin-left: 210px;
+}
+
+.configuracoes-subtitulo {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #a0aec0; 
+  margin: 0;
+  margin-left: 210px;
+}
+
+.botao-configuracoes {
+  background-color: #e53e3e;
+  color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 24px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  width: fit-content;
+  margin-bottom: 12px;
+  transition: background-color 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.botao-configuracoes:hover {
+  background-color: #c53030;
+}
+
+.email-informacoes {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.email-informacoes .email-texto-transparente {
+  font-size: 0.85rem;
+  font-style: italic;
+  color: #a0aec0;
+}
+
+.email-informacoes .email-texto {
+  font-size: 0.95rem;
+  font-style: italic;
+  color: #e2e8f0;
+}
+
+.grid-senha {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 30px;
+    column-gap: 530px;
+}
+
+.grid-idiomas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 410px;
+    margin-bottom: 30px;
+    column-gap: 530px;
+}
+
+.grid-plano-plus {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 420px;
+    margin-bottom: 30px;
+    column-gap: 530px;
+}
+
+.botao-configuracoes-preto {
+  background-color: #1D3557;
+  color: #e53e3e;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 24px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  width: fit-content;
+  margin-bottom: 12px;
+  transition: background-color 0.2s ease;
+}
+
+.grid-suas-contas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 420px;
+    margin-bottom: 30px;
+    column-gap: 530px;
+}
+
+.letra-vermelha {
+    color: var(--vermelho);
+}
+
+.grid-tempo-conosco {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 30px;
+    gap: 600px;
+}
+
+.imagem-grande {
+  height: 50px;
+  width: 50px;
+}
+
+.grid-estilo-favorito {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  margin-bottom: 30px;
+  column-gap: 600px;
+}
+
+.grid-estilo-favorito .imagem-grande {
+  margin-left: 20px;
+}
+
+.grid-musica-favorita {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  margin-bottom: 30px;
+  column-gap: 600px;
+}
+
+.grid-versao-site {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 30px;
+  gap: 600px;
+}
+
+.grid-alterar-foto {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin-bottom: 30px;
+}
+
+.grid-alterar-nome {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 820px;
+  margin-bottom: 30px;
+}
+
+.grid-privacidade {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 830px;
+  margin-bottom: 30px;
+}
+
+.grid-status {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 830px;
+  margin-bottom: 30px;
+}
+
