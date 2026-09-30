@@ -236,3 +236,12 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+.musica-textos span:hover,
+.infos-album p span:hover,
+.card-capa span:hover,
+.sugestao-info span:hover,
+.fila-info span:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}

@@ -302,6 +302,7 @@
 
 .musica-textos span:hover,
 .sugestao-info span:hover,
+.infos-album p span:hover,
 .fila-info span:hover {
     text-decoration: underline;
     cursor: pointer;
