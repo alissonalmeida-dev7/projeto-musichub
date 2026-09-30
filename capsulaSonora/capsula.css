@@ -1,0 +1,111 @@
+.banner-chamada {
+    text-align: left;
+    font-size: 28px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.banner-chamada span {
+    color: var(--vermelho);
+}
+
+.retangulo {
+    grid-area: player;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 24px;
+    overflow: hidden;
+    border-radius: 20px;
+    background: var(--fundo-painel);
+    border: 2px solid var(--borda-card);
+}
+
+.pequeno-titulo {
+    display: flex;
+    justify-self: flex-start;
+}
+
+.caixas {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.retangulo h2 {
+    display: flex;
+    justify-content: center;
+}
+
+.retangulo span {
+    display: flex;
+    color: darkgrey;
+    justify-content: center;
+}
+
+.retangulo2 {
+    grid-area: player;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 24px;
+    overflow: hidden;
+    border-radius: 20px;
+    background: var(--fundo-painel);
+    border: 2px solid var(--borda-card);
+}
+
+.retangulo2 span {
+    display: flex;
+    color: var(--vermelho);
+    justify-content: flex-start;
+    font-size: 25px;
+}
+
+.retangulo2 h2 {
+    display: flex;
+    font-size: 50px;
+}
+
+.informacoes-retangulo::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    margin: 0 auto;
+    background: var(--vermelho);
+}
+
+.informacoes-musica {
+    display: flex;
+    justify-content: space-around;
+}
+
+.informacoes-musica span {
+    display: flex;
+    justify-content: space-around;
+}
+
+.informacoes-musica h2 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.maisOuvido img {
+    width: 400px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid var(--vermelho);
+    box-shadow: 0 4px 25px var(--vermelho);
+}
+
+.musicaOuvida img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 3px solid var(--vermelho);
+    box-shadow: 0 4px 25px var(--vermelho);
+}
