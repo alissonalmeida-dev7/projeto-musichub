@@ -205,3 +205,44 @@
     height: 250px;
     width: 250px;
 }
+
+/* ===== HOVER NAS MÚSICAS ===== */
+.playlist-item,
+.artista-item,
+.musica-item,
+.albun-item {
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.playlist-item:hover,
+.artista-item:hover,
+.musica-item:hover,
+.albun-item:hover {
+    background: var(--fundo-card-hover);
+}
+
+.musica-info p:hover,
+.albun-info p:hover {
+    text-decoration: underline;
+}
+
+.favorito-icone,
+.favorito-icone-artista {
+    cursor: pointer;
+}
+
+.favorito-icone i,
+.favorito-icone-artista i {
+    opacity: 0.8;
+    transition: all 0.2s;
+}
+
+.favorito-icone:hover i,
+.favorito-icone-artista:hover i {
+    opacity: 1;
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 6px color-mix(in srgb, var(--vermelho) 80%, transparent));
+}
