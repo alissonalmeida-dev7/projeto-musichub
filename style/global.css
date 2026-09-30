@@ -491,3 +491,11 @@ filter: drop-shadow(0 0 6px color-mix(in srgb, var(--vermelho) 80%, transparent)
   margin: 0 auto 16px auto;
   background: var(--vermelho);
 }
+
+.musica-info span:hover,
+.card-sub:hover,
+.player-artista:hover,
+.fila-info span:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
