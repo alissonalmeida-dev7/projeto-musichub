@@ -1,0 +1,264 @@
+/* ============================================ */
+/* GERAL */
+/* ============================================ */
+
+/* ===== TITULOS ===== */
+.banner-chamada { 
+  text-align: left;
+  font-size: 28px; 
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-bottom: 20px; 
+}
+
+.banner-chamada span { 
+  color: var(--vermelho); 
+}
+.titulo-secao { 
+    text-align: left;
+    font-size: 28px; 
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 20px; 
+    margin-top: 20px;
+}
+
+.titulo-secao span { 
+  color: var(--vermelho); 
+}
+
+/* ===== ICONE DE FAVORITO ===== */
+
+.favorito-icone {
+    display: grid;
+    place-items: center;
+    position: absolute;
+
+    left: 90%;
+    bottom: 0%;
+
+    font-size: 30px;
+
+    height: 40px;
+    width: 40px;
+
+    box-shadow: 5px 5px 2px 3px rgba(0, 0, 0, 0.3);
+
+    background-color: var(--azul-escuro);
+    border-radius: 5px;
+
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.favorito-icone:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 10px 5px rgba(230, 57, 70, 0.4);
+}
+
+.favorito-icone i, .favorito-icone-artista i {
+    font-weight: 900;
+    color: var(--vermelho);
+}
+
+.favorito-imagem {
+    position: relative;
+}
+
+.favorito-icone-artista {
+    display: grid;
+    place-items: center;
+    position: absolute;
+
+    left: 80%;
+    bottom: 5%;
+
+    font-size: 30px;
+
+    height: 40px;
+    width: 40px;
+
+    box-shadow: 5px 5px 2px 3px rgba(0, 0, 0, 0.3);
+
+    background-color: var(--azul-escuro);
+    border-radius: 5px;
+
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.favorito-icone-artista:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 10px 5px rgba(230, 57, 70, 0.4);
+}
+
+
+.artistas-favoritos::before,
+.musicas-favoritas::before,
+.albuns-favoritos::before {
+  content: "";
+  display: block;
+  width: 68%;
+  height: 1px;
+  margin: 0 auto;
+  background: var(--vermelho);
+}
+
+.artistas-favoritos,
+.musicas-favoritas,
+.albuns-favoritos {
+    margin-top: 40px;
+}
+
+
+/* ============================================ */
+/* PLAYLIST */
+/* ============================================ */
+
+.playlist-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+}
+
+.playlist-info {
+    display: flex;
+    justify-content: center;
+    font-size: 1.3em;
+}
+
+.playlist-item img {
+    height: 250px;
+    width: 250px;
+}
+
+/* ============================================ */
+/* ARTISTAS FAVORITOS */
+/* ============================================ */
+
+.artistas-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    gap: 1.2em;
+}
+
+.artista-item img {
+  width: 100%;
+  height: 100%;
+
+  max-width: 300px;
+  max-height: 300px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid var(--vermelho);
+  box-shadow: 0 4px 25px var(--vermelho);
+}
+
+.artista-item p {
+    display: flex;
+    justify-content: center;
+    font-size: 1.3em;
+}
+
+/* ============================================ */
+/* MUSICAS FAVORITOS */
+/* ============================================ */
+
+.musicas-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+}
+
+.musica-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3em;
+}
+
+.musica-info strong {
+    font-size: 1.3em;
+}
+
+.musica-info p {
+    font-size: 0.8em;
+}
+
+.musica-item img {
+    height: 250px;
+    width: 250px;
+}
+
+/* ============================================ */
+/* ALBUNS FAVORITOS */
+/* ============================================ */
+
+.albuns-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+}
+
+.albun-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3em;
+}
+
+.albun-info strong {
+    font-size: 1.3em;
+}
+
+.albun-info p {
+    font-size: 0.8em;
+}
+
+.albun-item img {
+    height: 250px;
+    width: 250px;
+}
+
+/* ===== HOVER NAS MÚSICAS ===== */
+.playlist-item,
+.artista-item,
+.musica-item,
+.albun-item {
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.playlist-item:hover,
+.artista-item:hover,
+.musica-item:hover,
+.albun-item:hover {
+    background: var(--fundo-card-hover);
+}
+
+.musica-info p:hover,
+.albun-info p:hover {
+    text-decoration: underline;
+}
+
+.favorito-icone,
+.favorito-icone-artista {
+    cursor: pointer;
+}
+
+.favorito-icone i,
+.favorito-icone-artista i {
+    opacity: 0.8;
+    transition: all 0.2s;
+}
+
+.favorito-icone:hover i,
+.favorito-icone-artista:hover i {
+    opacity: 1;
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 6px color-mix(in srgb, var(--vermelho) 80%, transparent));
+}
