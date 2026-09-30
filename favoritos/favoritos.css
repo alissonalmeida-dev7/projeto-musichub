@@ -48,13 +48,32 @@
     border-radius: 5px;
 }
 
-.favorito-icone i {
+.favorito-icone i, .favorito-icone-artista i {
     font-weight: 900;
     color: var(--vermelho);
 }
 
-.musica-imagem {
+.favorito-imagem {
     position: relative;
+}
+
+.favorito-icone-artista {
+    display: grid;
+    place-items: center;
+    position: absolute;
+
+    left: 80%;
+    bottom: 5%;
+
+    font-size: 30px;
+
+    height: 40px;
+    width: 40px;
+
+    box-shadow: 5px 5px 2px 3px rgba(0, 0, 0, 0.3);
+
+    background-color: var(--azul-escuro);
+    border-radius: 5px;
 }
 
 
