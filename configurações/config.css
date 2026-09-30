@@ -63,10 +63,18 @@
   flex-direction: column;
 }
 
+.configuracoes-titulos {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0 0 15px 0;
+  margin-left: 00px;
+}
+
 .configuracoes-titulo {
   font-size: 2rem;
   font-weight: bold;
   margin: 0 0 15px 0;
+  margin-left: 210px;
 }
 
 .configuracoes-subtitulo {
@@ -74,6 +82,7 @@
   font-style: italic;
   color: #a0aec0; 
   margin: 0;
+  margin-left: 210px;
 }
 
 .botao-configuracoes {
@@ -88,6 +97,9 @@
   width: fit-content;
   margin-bottom: 12px;
   transition: background-color 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
 }
 
 .botao-configuracoes:hover {
@@ -115,8 +127,8 @@
 .grid-senha {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 410px;
     margin-bottom: 30px;
+    column-gap: 530px;
 }
 
 .grid-idiomas {
@@ -124,6 +136,7 @@
     grid-template-columns: 1fr 1fr;
     gap: 410px;
     margin-bottom: 30px;
+    column-gap: 530px;
 }
 
 .grid-plano-plus {
@@ -131,6 +144,7 @@
     grid-template-columns: 1fr 1fr;
     gap: 420px;
     margin-bottom: 30px;
+    column-gap: 530px;
 }
 
 .botao-configuracoes-preto {
@@ -152,6 +166,7 @@
     grid-template-columns: 1fr 1fr;
     gap: 420px;
     margin-bottom: 30px;
+    column-gap: 530px;
 }
 
 .letra-vermelha {
@@ -161,4 +176,64 @@
 .grid-tempo-conosco {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-bottom: 30px;
+    gap: 600px;
 }
+
+.imagem-grande {
+  height: 50px;
+  width: 50px;
+}
+
+.grid-estilo-favorito {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  margin-bottom: 30px;
+  column-gap: 600px;
+}
+
+.grid-estilo-favorito .imagem-grande {
+  margin-left: 20px;
+}
+
+.grid-musica-favorita {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  margin-bottom: 30px;
+  column-gap: 600px;
+}
+
+.grid-versao-site {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 30px;
+  gap: 600px;
+}
+
+.grid-alterar-foto {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin-bottom: 30px;
+}
+
+.grid-alterar-nome {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 820px;
+  margin-bottom: 30px;
+}
+
+.grid-privacidade {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 830px;
+  margin-bottom: 30px;
+}
+
+.grid-status {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 830px;
+  margin-bottom: 30px;
+}
+
