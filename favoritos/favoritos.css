@@ -77,6 +77,24 @@
 }
 
 
+.artistas-favoritos::before,
+.musicas-favoritas::before,
+.albuns-favoritos::before {
+  content: "";
+  display: block;
+  width: 68%;
+  height: 1px;
+  margin: 0 auto;
+  background: var(--vermelho);
+}
+
+.artistas-favoritos,
+.musicas-favoritas,
+.albuns-favoritos {
+    margin-top: 40px;
+}
+
+
 /* ============================================ */
 /* PLAYLIST */
 /* ============================================ */
