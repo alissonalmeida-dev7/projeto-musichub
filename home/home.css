@@ -256,6 +256,7 @@
 
 .musica-info span:hover,
 .card-sub:hover,
+.player-artista:hover,
 .fila-info span:hover {
   text-decoration: underline;
   cursor: pointer;

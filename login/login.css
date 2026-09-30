@@ -79,8 +79,15 @@ header.cabecalho-login .icone-btn.home {
     margin-bottom: 15px;
 }
 
+.login-cabecalho {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .login-cabecalho-login h1 {
     font-size: 1.5em;
+    
 }
 
 .login-cabecalho-login p {
@@ -125,7 +132,7 @@ input,
 }
 
 .campo label {
-    color: var(--azul-escuro);
+    color: var(--texto-principal);
     font-size: 1em;
     font-weight: 700;
 }
