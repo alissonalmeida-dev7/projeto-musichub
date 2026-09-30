@@ -19,7 +19,7 @@
     overflow: hidden;
     border-radius: 20px;
     background: var(--fundo-painel);
-    border: 1px solid var(--borda-card);
+    border: 2px solid var(--borda-card);
 }
 
 .pequeno-titulo {
@@ -53,7 +53,7 @@
     overflow: hidden;
     border-radius: 20px;
     background: var(--fundo-painel);
-    border: 1px solid var(--borda-card);
+    border: 2px solid var(--borda-card);
 }
 
 .retangulo2 span {
@@ -99,6 +99,7 @@
     border-radius: 50%;
     border: 3px solid var(--vermelho);
     box-shadow: 0 4px 25px var(--vermelho);
+    cursor: pointer;
 }
 
 .musicaOuvida img {
@@ -108,4 +109,10 @@
     border-radius: 8px;
     border: 3px solid var(--vermelho);
     box-shadow: 0 4px 25px var(--vermelho);
+    cursor: pointer;
+}
+
+.fila-info span:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
