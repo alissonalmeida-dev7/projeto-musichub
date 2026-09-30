@@ -1,18 +1,17 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - MusicHub</title>
-    <link rel="stylesheet" href="home.css">
+    <title>Explore - MusicHub</title>
+    <link rel="stylesheet" href="explore.css">
     <link rel="stylesheet" href="../style/global.css">
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
-
     <div class="layout">
         <header class="cabecalho">
             <a href="#" class="logo">
@@ -26,14 +25,15 @@
 
             <div class="acoes">
                 <button class="icone-btn sino" aria-label="Notificações"><i class="fa-regular fa-bell"></i></button>
-                <a href="../login/login.html"><button class="icone-btn avatar" aria-label="Perfil"><i class="fa-solid fa-circle-user"></i></button></a>
+                <a href="../login/login.html"><button class="icone-btn avatar" aria-label="Perfil"><i
+                            class="fa-solid fa-circle-user"></i></button></a>
             </div>
         </header>
 
         <nav class="menu-lateral-esquerdo">
             <div class="menu-grupo">
-                <a href="#" class="ativo"><i class="fa-solid fa-house"></i></a>
-                <a href="../explore/explore.html"><i class="fa-regular fa-compass"></i></a>
+                <a href="../home/home.html" class="home-icone"><img src="../imgs/home.svg" alt="Home"></a>
+                <a href="#" class="ativo"><i class="fa-solid fa-compass"></i></a>
                 <a href="../favoritos/favoritos.html"><i class="fa-regular fa-heart"></i></a>
                 <a href="../capsulaSonora/capsula.html"><img src="../imgs/musicas.svg" alt="Músicas"></a>
             </div>
@@ -47,123 +47,10 @@
         </nav>
 
         <main class="conteudo-principal">
-            
 
-            <section class="banner">
-                <h2 class="banner-chamada">NAVEGUE NOS <span>MELHORES</span> SONS</h2>
-
-                <div class="banner-carrossel">
-                    <div class="banner-lateral externo-esq"></div>
-                    <div class="banner-lateral externo-dir"></div>
-                    <div class="banner-lateral interno-esq"></div>
-                    <div class="banner-lateral interno-dir"></div>
-
-                    <button class="banner-seta esquerda" aria-label="Anterior">
-                        <i class="fa-solid fa-chevron-left"></i>
-                    </button>
-
-                    <div class="banner-slides">
-                        <div class="banner-slide ativo" data-titulo="SERTANEJO">
-                            <img src="../imgs/sertanejp-rodape.png" alt="Sertanejo">
-                        </div>
-                        <div class="banner-slide" data-titulo="TRAP">
-                            <img src="../imgs/trap.jpg" alt="Trap">
-                        </div>
-                        <div class="banner-slide" data-titulo="POP">
-                            <img src="../imgs/pop.jpg" alt="Pop">
-                        </div>
-                    </div>
-
-                    <button class="banner-seta direita" aria-label="Próximo">
-                        <i class="fa-solid fa-chevron-right"></i>
-                    </button>
-                </div>
-
-                <p class="banner-titulo">SERTANEJO</p>
-            </section>
-
-            <section class="musicas">
-                <h2 class="secao-titulo">MÚSICAS <span>RECOMENDADAS</span></h2>
-
-                <div class="musicas-grid">
-                    <div class="musica-item">
-                        <img src="../imgs/musica-recomenda-Terapia.png" alt="">
-                        <div class="musica-info">
-                            <strong>Terapia</strong>
-                            <span>Mc Kevin</span>
-                        </div>
-                        <button aria-label="Mais opções"><i class="fa-solid fa-ellipsis"></i></button>
-                    </div>
-                    <div class="musica-item">
-                        <img src="../imgs/musica-recomenda-TMOIG.png" alt="">
-                        <div class="musica-info">
-                            <strong>TMOIG</strong>
-                            <span>Mc IG</span>
-                        </div>
-                        <button aria-label="Mais opções"><i class="fa-solid fa-ellipsis"></i></button>
-                    </div>
-                    <div class="musica-item">
-                        <img src="../imgs/musica-recomenda-Famoso-Ima.png" alt="">
-                        <div class="musica-info">
-                            <strong>Famoso Imã</strong>
-                            <span>Mc Lele JP, Mc Pozo do Rodo, Mc Leozinho ZS</span>
-                        </div>
-                        <button aria-label="Mais opções"><i class="fa-solid fa-ellipsis"></i></button>
-                    </div>
-                    <div class="musica-item">
-                        <img src="../imgs/musica_recomenda-Artista_generico.png" alt="">
-                        <div class="musica-info">
-                            <strong>Artista Genérico</strong>
-                            <span>Veigh, Supernova Ent</span>
-                        </div>
-                        <button aria-label="Mais opções"><i class="fa-solid fa-ellipsis"></i></button>
-                    </div>
-                    <div class="musica-item">
-                        <img src="../imgs/musica_recomenda-Icones_globais.png" alt="">
-                        <div class="musica-info">
-                            <strong>ÍCONES GLOBAIS</strong>
-                            <span>Ghard, Vulgo FK, Supernova Ent</span>
-                        </div>
-                        <button aria-label="Mais opções"><i class="fa-solid fa-ellipsis"></i></button>
-                    </div>
-                    <div class="musica-item">
-                        <img src="../imgs/musica_recomenda-Backstage.png" alt="">
-                        <div class="musica-info">
-                            <strong>BACKSTAGE</strong>
-                            <span>Matuê</span>
-                        </div>
-                        <button aria-label="Mais opções"><i class="fa-solid fa-ellipsis"></i></button>
-                    </div>
-                    <div class="musica-item">
-                        <img src="../imgs/musica_recomenda-Largado_as_tracas.png" alt="">
-                        <div class="musica-info">
-                            <strong>Largado Às Traças</strong>
-                            <span>Zé Neto & Cristiano</span>
-                        </div>
-                        <button aria-label="Mais opções"><i class="fa-solid fa-ellipsis"></i></button>
-                    </div>
-                    <div class="musica-item">
-                        <img src="../imgs/musica_recomenda-infiel.png" alt="">
-                        <div class="musica-info">
-                            <strong>Infiel</strong>
-                            <span>Marília Mendonça</span>
-                        </div>
-                        <button aria-label="Mais opções"><i class="fa-solid fa-ellipsis"></i></button>
-                    </div>
-                    <div class="musica-item">
-                        <img src="../imgs/musica_recomenda-Vidinha_de_balada.png" alt="">
-                        <div class="musica-info">
-                            <strong>Vidinha De Balada</strong>
-                            <span>Henrique & Juliano</span>
-                        </div>
-                        <button aria-label="Mais opções"><i class="fa-solid fa-ellipsis"></i></button>
-                    </div>
-                </div>
-            </section>
 
             <section class="novidades">
-                <h2 class="secao-titulo">NOVIDADES <span>DA SEMANA</span></h2>
-
+                <h2 class="banner-chamada">MÚSICAS EM <span>ALTA</span><i class="fa-solid fa-fire-flame-curved"></i></h2>
                 <div class="cards-carrossel">
                     <div class="card-capa">
                         <img src="../imgs/novidades_semana-Carnivoro.png" alt="">
@@ -188,51 +75,64 @@
                 </div>
             </section>
 
-            <section class="artistas">
-                <h2 class="secao-titulo">ARTISTAS</h2>
-
-                <div class="artistas-carrossel">
-                    <div class="artista-item">
-                        <img src="../imgs/artistas-matuezao.png" alt="">
-                        <p>Matue</p>
-                    </div>
-                    <div class="artista-item">
-                        <img src="../imgs/artistas-periclao_novo.png" alt="">
-                        <p>Pericles</p>
-                    </div>
-                    <div class="artista-item">
-                        <img src="../imgs/artistas-Marilia_Mendonca.png" alt="">
-                        <p>Marilia Mendonça</p>
-                    </div>
-                    <div class="artista-item">
-                        <img src="../imgs/artistas-Michael_Jackson.png" alt="">
-                        <p>Michael Jackson</p>
-                    </div>
-                </div>
-            </section>
-
-            <section class="estacoes">
-                <h2 class="secao-titulo">ESTAÇÕES</h2>
-
+            <section class="top-rankings">
+                <h2 class="banner-chamada">TOP <span>RANKINGS</span><i class="fa-solid fa-trophy"></i></h2>
                 <div class="cards-carrossel">
                     <div class="card-capa">
-                        <img src="../imgs/trap_e_funk-grupo_estacoes.png" alt="">
-                        <p class="card-nome">Trap e Funk</p>
+                        <img src="../imgs/Widget global.png" alt="">
+                    </div>
+
+                    <div class="card-capa">
+                        <img src="../imgs/Widget Brasil.png" alt="">
                     </div>
                     <div class="card-capa">
-                        <img src="../imgs/sertanejo_e_pagode-grupo_estacoes.png" alt="">
-                        <p class="card-nome">Sertanejo e Pagode</p>
+                        <img src="../imgs/Widget salvos.png" alt="">
                     </div>
                     <div class="card-capa">
-                        <img src="../imgs/trap_e_pop-grupo_estacoes.png" alt="">
-                        <p class="card-nome">Trap e Pop</p>
-                    </div>
-                    <div class="card-capa">
-                        <img src="../imgs/pop_e_hip_hop-grupo_estacoes.png" alt="">
-                        <p class="card-nome">Pop e Hip Hop</p>
+                        <img src="../imgs/Widget compartilhadas.png" alt="">
                     </div>
                 </div>
             </section>
+
+            <section class="estilos">
+                <h2 class="banner-chamada">ESTILOS EM <span>ALTA</span><i class="fa-solid fa-fire-flame-curved"></i></h2>
+                <div class="cards-carrossel">
+                    <div class="card-capa">
+                        <img src="../imgs/Trap.png" alt="">
+                    </div>
+
+                    <div class="card-capa">
+                        <img src="../imgs/Funk.png" alt="">
+                    </div>
+                    <div class="card-capa">
+                        <img src="../imgs/Phonk.png" alt="">
+                    </div>
+                    <div class="card-capa">
+                        <img src="../imgs/Afrobeats.png" alt="">
+                    </div>
+                </div>
+            </section>
+
+            <section class="descobertas">
+                <h2 class="banner-chamada"><span>DESCOBERTAS</span><i class="fa-solid fa-lightbulb"></i></h2>
+                <div class="cards-carrossel">
+                    <div class="card-capa">
+                        <img src="../imgs/Músicas para a madrugada.png" alt="">
+                    </div>
+
+                    <div class="card-capa">
+                        <img src="../imgs/Músicas clássicas.png" alt="">
+                    </div>
+                    <div class="card-capa">
+                        <img src="../imgs/Good vibes.png" alt="">
+                    </div>
+                    <div class="card-capa">
+                        <img src="../imgs/Novos artistas.png" alt="">
+                    </div>
+                </div>
+            </section>
+
+
 
             <footer class="rodape">
                 <div class="rodape-marca">
