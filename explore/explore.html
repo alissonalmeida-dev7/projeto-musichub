@@ -6,13 +6,274 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Explore - MusicHub</title>
     <link rel="stylesheet" href="explore.css">
-    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="../style/global.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
+    <div class="layout">
+        <header class="cabecalho">
+            <a href="#" class="logo">
+                <img src="../imgs/Logo_superior_esquerdo-MusicHub.svg" alt="MusicHUB Logo">
+            </a>
 
+            <div class="busca">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="O que você busca?">
+            </div>
+
+            <div class="acoes">
+                <button class="icone-btn sino" aria-label="Notificações"><i class="fa-regular fa-bell"></i></button>
+                <a href="../login/login.html"><button class="icone-btn avatar" aria-label="Perfil"><i
+                            class="fa-solid fa-circle-user"></i></button></a>
+            </div>
+        </header>
+
+        <nav class="menu-lateral-esquerdo">
+            <div class="menu-grupo">
+                <a href="#"><i class="fa-solid fa-house"></i></a>
+                <a href="#" class="ativo"><i class="fa-regular fa-compass"></i></a>
+                <a href="#"><i class="fa-regular fa-heart"></i></a>
+                <a href="#"><img src="../imgs/musicas.svg" alt="Músicas"></a>
+            </div>
+
+            <hr>
+
+            <div class="menu-grupo">
+                <a href="#"><img src="../imgs/configuracoes.svg" alt="Configurações"></a>
+                <a href="#"><img src="../imgs/sair.svg" alt="Sair"></a>
+            </div>
+        </nav>
+
+        <main class="conteudo-principal">
+
+
+            <section class="novidades">
+                <h2 class="banner-chamada">MÚSICAS EM <span>ALTA</span></h2>
+                <div class="cards-carrossel">
+                    <div class="card-capa">
+                        <img src="../imgs/novidades_semana-Carnivoro.png" alt="">
+                        <p class="card-nome">Carnivoro</p>
+                        <span class="card-sub">Mc Jacaré, Mc Lele JP, Mc Negão Original & DJ Japa NK</span>
+                    </div>
+                    <div class="card-capa">
+                        <img src="../imgs/novidades_semana-Sorriso_no_rosto.png" alt="">
+                        <p class="card-nome">Sorriso no rosto</p>
+                        <span class="card-sub">Mc IG</span>
+                    </div>
+                    <div class="card-capa">
+                        <img src="../imgs/novidades_semana-Medo_bobo.png" alt="">
+                        <p class="card-nome">Medo bobo</p>
+                        <span class="card-sub">Maiara e Maraisa</span>
+                    </div>
+                    <div class="card-capa">
+                        <img src="../imgs/novidades_semana-Te_esperando.png" alt="">
+                        <p class="card-nome">Te esperando</p>
+                        <span class="card-sub">Luan santana</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="artistas">
+                <h2 class="secao-titulo">ARTISTAS</h2>
+
+                <div class="artistas-carrossel">
+                    <div class="artista-item">
+                        <img src="../imgs/artistas-matuezao.png" alt="">
+                        <p>Matue</p>
+                    </div>
+                    <div class="artista-item">
+                        <img src="../imgs/artistas-periclao_novo.png" alt="">
+                        <p>Pericles</p>
+                    </div>
+                    <div class="artista-item">
+                        <img src="../imgs/artistas-Marilia_Mendonca.png" alt="">
+                        <p>Marilia Mendonça</p>
+                    </div>
+                    <div class="artista-item">
+                        <img src="../imgs/artistas-Michael_Jackson.png" alt="">
+                        <p>Michael Jackson</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="estacoes">
+                <h2 class="secao-titulo">ESTAÇÕES</h2>
+
+                <div class="cards-carrossel">
+                    <div class="card-capa">
+                        <img src="../imgs/trap_e_funk-grupo_estacoes.png" alt="">
+                        <p class="card-nome">Trap e Funk</p>
+                    </div>
+                    <div class="card-capa">
+                        <img src="../imgs/sertanejo_e_pagode-grupo_estacoes.png" alt="">
+                        <p class="card-nome">Sertanejo e Pagode</p>
+                    </div>
+                    <div class="card-capa">
+                        <img src="../imgs/trap_e_pop-grupo_estacoes.png" alt="">
+                        <p class="card-nome">Trap e Pop</p>
+                    </div>
+                    <div class="card-capa">
+                        <img src="../imgs/pop_e_hip_hop-grupo_estacoes.png" alt="">
+                        <p class="card-nome">Pop e Hip Hop</p>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="rodape">
+                <div class="rodape-marca">
+                    <h2 class="rodape-logo">Music<span>HUB</span></h2>
+                    <p>Navegue nos melhores sons, de qualquer lugar, a qualquer hora.</p>
+                </div>
+
+                <div class="rodape-colunas">
+                    <div class="rodape-coluna sobre">
+                        <h3>Sobre</h3>
+                        <a href="#">Sobre nós</a>
+                        <a href="#">Contato</a>
+                        <a href="#">Ajuda</a>
+                    </div>
+
+                    <div class="rodape-coluna legal">
+                        <h3>Legal</h3>
+                        <a href="#">Termos</a>
+                        <a href="#">Privacidade</a>
+                    </div>
+
+                    <div class="rodape-senai">
+                        <img src="../imgs/logo_footer-SENAI.svg" alt="SENAI">
+                    </div>
+
+                    <div class="rodape-coluna redes">
+                        <h3>Redes sociais</h3>
+                        <div class="rodape-icones">
+                            <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="rodape-copy">©2026 Music HUB - Todos os direitos reservados</p>
+            </footer>
+        </main>
+
+        <aside class="player-lateral">
+
+            <section class="player-atual">
+                <img class="player-capa" src="../imgs/aside_direito-Invisel_PT2.png" alt="Capa de Invisível pt.2">
+                <h3 class="player-titulo">Invisível pt.2</h3>
+                <p class="player-artista">Veigh</p>
+
+                <div class="player-progresso">
+                    <span>3:30</span>
+                    <input type="range" min="0" max="100" value="80" aria-label="Progresso da música">
+                    <span>4:10</span>
+                </div>
+
+                <div class="player-controles">
+                    <button aria-label="Aleatório"><i class="fa-solid fa-shuffle"></i></button>
+                    <button aria-label="Anterior"><i class="fa-solid fa-backward-step"></i></button>
+                    <button aria-label="Pausar"><i class="fa-solid fa-pause"></i></button>
+                    <button aria-label="Próxima"><i class="fa-solid fa-forward-step"></i></button>
+                    <button aria-label="Repetir"><i class="fa-solid fa-repeat"></i></button>
+                </div>
+
+                <div class="player-volume">
+                    <i class="fa-solid fa-volume-high"></i>
+                    <input type="range" min="0" max="100" value="60" aria-label="Volume">
+                </div>
+            </section>
+
+            <section class="player-fila">
+                <ul class="fila-lista">
+                    <li class="fila-item">
+                        <img src="../imgs/aside_direito-Imagina_esse_cenario.png" alt="">
+                        <div class="fila-info">
+                            <strong>Imagina esse cenario</strong>
+                            <span>Matuê, Veigh</span>
+                        </div>
+                        <button aria-label="Mais opções"><i class="fa-solid fa-ellipsis"></i></button>
+                    </li>
+
+                    <li class="fila-item">
+                        <img src="../imgs/aside_direito-Loucura.png" alt="">
+                        <div class="fila-info">
+                            <strong>Loucura</strong>
+                            <span>Borges, Mc Cabelinho, Veigh</span>
+                        </div>
+                        <button aria-label="Mais opções"><i class="fa-solid fa-ellipsis"></i></button>
+                    </li>
+
+                    <li class="fila-item">
+                        <img src="../imgs/aside_direito-ballena.png" alt="">
+                        <div class="fila-info">
+                            <strong>Ballena</strong>
+                            <span>Vulgo FK, MC PH, Veigh</span>
+                        </div>
+                        <button aria-label="Mais opções"><i class="fa-solid fa-ellipsis"></i></button>
+                    </li>
+
+                    <li class="fila-item">
+                        <img src="../imgs/aside_direito-Novo_balanco.png" alt="">
+                        <div class="fila-info">
+                            <strong>Novo balanço</strong>
+                            <span>Veigh</span>
+                        </div>
+                        <button aria-label="Mais opções"><i class="fa-solid fa-ellipsis"></i></button>
+                    </li>
+
+                    <li class="fila-item">
+                        <img src="../imgs/aside_direito-Sal_e_pimenta.png" alt="">
+                        <div class="fila-info">
+                            <strong>Sal e pimenta</strong>
+                            <span>Kayblack, Veigh</span>
+                        </div>
+                        <button aria-label="Mais opções"><i class="fa-solid fa-ellipsis"></i></button>
+                    </li>
+
+                    <li class="fila-item">
+                        <img src="../imgs/aside_direito-Pros_menor_da_nova.png" alt="">
+                        <div class="fila-info">
+                            <strong>Pros menor da nova</strong>
+                            <span>G.A, Veigh, Mc Morena, Supernova Ent</span>
+                        </div>
+                        <button aria-label="Mais opções"><i class="fa-solid fa-ellipsis"></i></button>
+                    </li>
+
+                    <li class="fila-item">
+                        <img src="../imgs/musica_recomenda-Artista_generico.png" alt="">
+                        <div class="fila-info">
+                            <strong>Artista Genérico</strong>
+                            <span>Veigh</span>
+                        </div>
+                        <button aria-label="Mais opções"><i class="fa-solid fa-ellipsis"></i></button>
+                    </li>
+
+                    <li class="fila-item">
+                        <img src="../imgs/musica_recomenda-Anti-amor.png" alt="">
+                        <div class="fila-info">
+                            <strong>Anti-Amor - Ao Vivo</strong>
+                            <span>Gustavo Mioto, Jorge & Matheus</span>
+                        </div>
+                        <button aria-label="Mais opções"><i class="fa-solid fa-ellipsis"></i></button>
+                    </li>
+
+                    <li class="fila-item">
+                        <img src="../imgs/musica_recomenda-Vou_pela_madruga.png" alt="">
+                        <div class="fila-info">
+                            <strong>Vou pela madrugada</strong>
+                            <span>Mc Negão Original, MC Jvila, MC Willian, DJ Japa NK, MC Meno K, DJ Guh Mix</span>
+                        </div>
+                        <button aria-label="Mais opções"><i class="fa-solid fa-ellipsis"></i></button>
+                    </li>
+                </ul>
+            </section>
+
+        </aside>
+    </div>
+
+    <script src="home.js"></script>
 </body>
 
 </html>
