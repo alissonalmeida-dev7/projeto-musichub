@@ -1,0 +1,227 @@
+.conteudo-principal {
+  --recuo: clamp(0px, 7vw, 130px);
+}
+
+.conteudo-principal > :not(.rodape) {
+  width: 100%;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.configuracoes {
+  padding: 24px;
+}
+
+/* == TITULO ==*/
+.configuracoes-titulo {
+  font-size: clamp(1.5rem, 2vw, 2rem);
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 15px;
+  padding-left: var(--recuo);
+}
+
+.configuracoes-titulos {
+  font-size: clamp(1.5rem, 2vw, 2rem);
+  font-weight: bold;
+  margin: 0 0 15px 0;
+}
+
+.configuracoes-subtitulo {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #a0aec0;
+  margin: 0;
+  padding-left: var(--recuo);
+}
+
+.configuracoes-aba {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 12px 24px;
+  margin-bottom: 12px;
+}
+
+.item-aba {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.item-aba-ativa {
+  color: #ff4d4d;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.item-aba:hover {
+  color: #ff4d4d;
+}
+
+.divisao {
+  display: block;
+  width: 100%;
+  height: 1px;
+  margin: 0 auto;
+  background: #ffffff;
+}
+
+.grid-seu-email {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  gap: 30px 60px;
+  align-items: start;
+  margin-top: 30px;
+  color: #ffffff;
+  margin-bottom: 30px;
+  padding-left: var(--recuo);
+  padding-right: var(--recuo);
+}
+
+.grid-seu-email .configuracoes-titulo,
+.grid-seu-email .configuracoes-subtitulo {
+  padding-left: 0;
+}
+
+.email-colunas {
+  display: flex;
+  flex-direction: column;
+}
+
+.email-colunas:last-child .botao-configuracoes {
+  align-self: flex-end;
+}
+
+.botao-configuracoes {
+  background-color: #e53e3e;
+  color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 24px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  width: fit-content;
+  margin-bottom: 12px;
+  transition: background-color 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.botao-configuracoes:hover {
+  background-color: #c53030;
+}
+
+.email-informacoes {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.email-informacoes .email-texto-transparente {
+  font-size: 0.85rem;
+  font-style: italic;
+  color: #a0aec0;
+}
+
+.email-informacoes .email-texto {
+  font-size: 0.95rem;
+  font-style: italic;
+  color: #e2e8f0;
+}
+
+.grid-senha,
+.grid-idiomas,
+.grid-plano-plus,
+.grid-suas-contas,
+.grid-tempo-conosco,
+.grid-versao-site,
+.grid-estilo-favorito,
+.grid-musica-favorita,
+.grid-alterar-foto,
+.grid-alterar-nome,
+.grid-privacidade,
+.grid-status {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  column-gap: 24px;
+  margin-bottom: 30px;
+  padding-right: var(--recuo);
+}
+
+.botao-configuracoes-preto {
+  background-color: #1D3557;
+  color: #e53e3e;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 24px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  width: fit-content;
+  margin-bottom: 12px;
+  transition: background-color 0.2s ease;
+}
+
+.letra-vermelha {
+  color: var(--vermelho);
+}
+
+.imagem-grande,
+.grid-musica-favorita img {
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+}
+
+.grid-estilo-favorito,
+.grid-musica-favorita {
+  row-gap: 12px;
+}
+
+.grid-estilo-favorito .imagem-grande {
+  margin-left: 20px;
+}
+
+@media (max-width: 900px) {
+  .conteudo-principal {
+    --recuo: 0px;
+  }
+
+  .grid-seu-email {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .grid-senha,
+  .grid-idiomas,
+  .grid-plano-plus,
+  .grid-suas-contas,
+  .grid-tempo-conosco,
+  .grid-versao-site,
+  .grid-estilo-favorito,
+  .grid-musica-favorita,
+  .grid-alterar-foto,
+  .grid-alterar-nome,
+  .grid-privacidade,
+  .grid-status {
+    grid-template-columns: 1fr;
+    row-gap: 12px;
+  }
+
+  .grid-estilo-favorito span,
+  .grid-musica-favorita span,
+  .grid-alterar-foto span {
+    display: none;
+  }
+}

@@ -1,5 +1,10 @@
-/* ===== STYLE GUIDE & VARIÁVEIS ===== */
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&display=swap');
+
+@view-transition {
+  navigation: auto;
+}
+
+/* ===== STYLE GUIDE & VARIÁVEIS ===== */
 
 :root {
   --azul-escuro: #1D3557;

@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Capsula Sonora</title>
-    <link rel="stylesheet" href="capsula.css">
+    <title>Configurações - MusicHub</title>
+    <link rel="stylesheet" href="config.css">
     <link rel="stylesheet" href="../style/global.css">
     <link rel="shortcut icon" href="../imgs/Logo_superior_esquerdo-MusicHub.svg" type="image/x-icon">
 
@@ -37,16 +37,18 @@
                 <a href="../home/home.html" class="home-icone"><img src="../imgs/home.svg" alt="Home"></a>
                 <a href="../explore/explore.html"><i class="fa-regular fa-compass"></i></a>
                 <a href="../favoritos/favoritos.html"><i class="fa-regular fa-heart"></i></a>
-                <a href="#" class="ativo"><img src="../imgs/musicas.svg" alt="Músicas"></a>
+                <a href="../capsulaSonora/capsula.html"><img src="../imgs/musicas.svg" alt="Músicas"></a>
             </div>
 
             <hr>
 
             <div class="menu-grupo">
-                <a href="../configurações/conta.html"><img src="../imgs/configuracoes.svg" alt="Configurações"></a>
+                <a href="../configurações/conta.html" class="ativo"><img src="../imgs/configuracoes-cheio.svg"
+                        alt="Configurações"></a>
                 <a href="../login/login.html"><img src="../imgs/sair.svg" alt="Sair"></a>
             </div>
         </nav>
+
         <aside class="player-lateral">
 
             <section class="player-atual">
@@ -158,48 +160,50 @@
                     </li>
                 </ul>
             </section>
-
         </aside>
 
         <main class="conteudo-principal">
-            <section class="banner">
-                <h2 class="banner-chamada">ATIVIDADE <span>SONORA</span></h2>
-                <div class="caixas">
 
-                    <article class="retangulo">
-                        <p class="pequeno-titulo">Agosto de 2026</p>
-                        <h2>Ainda estamos analisando sua atividade desse mês.</h2>
-                        <span>Volte mais tarde</span>
-                    </article>
+            <div class="configuracoes">
+                <h1 class="configuracoes-titulos">Configurações</h1>
 
-                    <article class="retangulo2">
-                        <div class="informacoes-retangulo">
-                            <p class="pequeno-titulo">Junho de 2026</p>
-                            <span>Tempo ouvindo</span>
-                            <h2>5.067 minutos</h2>
-                        </div>
+                <nav class="configuracoes-aba">
+                    <a href="../configurações/conta.html" class="item-aba">Conta</a>
+                    <a href="../configurações/informações.html" class="item-aba">Informações</a>
+                    <a href="#" class="item-aba-ativa">Personalizar perfil</a>
+                </nav>
 
-                        <div class="informacoes-musica">
+                <hr class="divisao" />
+            </div>
 
-                            <a href="../tela-artista/tela-artista.html">
-                                <div class="maisOuvido">
-                                    <span>Artista mais ouvido</span>
-                                    <h2>Matuê</h2>
-                                    <img src="../imgs/artistas-matuezao.png" alt="Matue-mais-ouvido">
-                                </div>
-                            </a>
+            <div class="grid-alterar-foto">
+                <h1 class="configuracoes-titulo">Alterar foto de perfil</h1>
+                <span></span>
+                <p class="configuracoes-subtitulo">Altere a sua foto de perfil.</p>
+                <button><img src="../imgs/editar-foto.png" alt=""></button>
+            </div>
 
-                            <div class="musicaOuvida">
-                                <span>Música mais ouvida</span>
-                                <h2>Artista Genérico</h2>
-                                <img src="../imgs/musica_recomenda-Artista_generico.png" alt="Musica_escutada">
-                            </div>
+            <h1 class="configuracoes-titulo">Alterar nome de usuário</h1>
+            <div class="grid-alterar-nome">
+                <p class="configuracoes-subtitulo">Altere o seu nome de usuário.</p>
+                <button class="botao-configuracoes">Alterar nome</button>
+            </div>
 
-                        </div>
+            <h1 class="configuracoes-titulo">Privacidade do perfil</h1>
+            <div class="grid-privacidade">
+                <p class="configuracoes-subtitulo">Altere a privacidade da sua conta.</p>
+                <button class="botao-configuracoes">Pública
+                    <img src="../imgs/seta-baixo.svg" alt="">
+                </button>
+            </div>
 
-                    </article>
-                </div>
-            </section>
+            <h1 class="configuracoes-titulo">Status</h1>
+            <div class="grid-status">
+                <p class="configuracoes-subtitulo">alterne o Status do seu perfil.</p>
+                <button class="botao-configuracoes">Online
+                    <img src="../imgs/seta-baixo.svg" alt="">
+                </button>
+            </div>
 
             <footer class="rodape">
                 <div class="rodape-marca">
@@ -233,11 +237,11 @@
                         </div>
                     </div>
                 </div>
+
                 <p class="rodape-copy">©2026 Music HUB - Todos os direitos reservados</p>
             </footer>
-
         </main>
-
+    </div>
 </body>
 
 </html>

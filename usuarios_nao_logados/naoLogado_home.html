@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - MusicHub</title>
-    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="naoLogado_home.css">
     <link rel="stylesheet" href="../style/global.css">
-    <link rel="shortcut icon" href="../imgs/Logo_superior_esquerdo-MusicHub.svg" type="image/x-icon">
 
+    <link rel="shortcut icon" href="../imgs/Logo_superior_esquerdo-MusicHub.svg" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
@@ -27,15 +27,14 @@
 
             <div class="acoes">
                 <button class="icone-btn sino" aria-label="Notificações"><i class="fa-regular fa-bell"></i></button>
-                <a href="../login/login.html"><button class="icone-btn avatar" aria-label="Perfil"><i
-                            class="fa-solid fa-circle-user"></i></button></a>
+                <a href="../login/login.html"><button class="sessao">Iniciar sessão</button></a>
             </div>
         </header>
 
         <nav class="menu-lateral-esquerdo">
             <div class="menu-grupo">
                 <a href="#" class="ativo"><i class="fa-solid fa-house"></i></a>
-                <a href="../explore/explore.html"><i class="fa-regular fa-compass"></i></a>
+                <a href="#"><i class="fa-regular fa-compass"></i></a>
                 <a href="../favoritos/favoritos.html"><i class="fa-regular fa-heart"></i></a>
                 <a href="../capsulaSonora/capsula.html"><img src="../imgs/musicas.svg" alt="Músicas"></a>
             </div>
@@ -43,13 +42,13 @@
             <hr>
 
             <div class="menu-grupo">
-                <a href="../configurações/conta.html"><img src="../imgs/configuracoes.svg" alt="Configurações"></a>
-                <a href="../login/login.html"><img src="../imgs/sair.svg" alt="Sair"></a>
+                <a href="#"><img src="../imgs/configuracoes.svg" alt="Configurações"></a>
+                <a href="#"><img src="../imgs/sair.svg" alt="Sair"></a>
             </div>
         </nav>
 
         <main class="conteudo-principal">
-
+            
 
             <section class="banner">
                 <h2 class="banner-chamada">NAVEGUE NOS <span>MELHORES</span> SONS</h2>
@@ -66,9 +65,7 @@
 
                     <div class="banner-slides">
                         <div class="banner-slide ativo" data-titulo="SERTANEJO">
-                            <a href="../tela_Estacoes/estacoes.html">
-                                <img src="../imgs/sertanejp-rodape.png" alt="Sertanejo">
-                            </a>
+                            <img src="../imgs/sertanejp-rodape.png" alt="Sertanejo">
                         </div>
                         <div class="banner-slide" data-titulo="TRAP">
                             <img src="../imgs/trap.jpg" alt="Trap">
@@ -196,12 +193,10 @@
                 <h2 class="secao-titulo">ARTISTAS</h2>
 
                 <div class="artistas-carrossel">
-                    <a href="../tela-artista/tela-artista.html">
-                        <div class="artista-item">
-                            <img src="../imgs/artistas-matuezao.png" alt="">
-                            <p>Matue</p>
-                        </div>
-                    </a>
+                    <div class="artista-item">
+                        <img src="../imgs/artistas-matuezao.png" alt="">
+                        <p>Matue</p>
+                    </div>
                     <div class="artista-item">
                         <img src="../imgs/artistas-periclao_novo.png" alt="">
                         <p>Pericles</p>
@@ -225,13 +220,10 @@
                         <img src="../imgs/trap_e_funk-grupo_estacoes.png" alt="">
                         <p class="card-nome">Trap e Funk</p>
                     </div>
-                    <a href="../tela_Estacoes/estacoes.html">
-                        <div class="card-capa">
-                            <img src="../imgs/sertanejo_e_pagode-grupo_estacoes.png" alt="">
-                            <p class="card-nome">Sertanejo e Pagode</p>
-                        </div>
-                    </a>
-
+                    <div class="card-capa">
+                        <img src="../imgs/sertanejo_e_pagode-grupo_estacoes.png" alt="">
+                        <p class="card-nome">Sertanejo e Pagode</p>
+                    </div>
                     <div class="card-capa">
                         <img src="../imgs/trap_e_pop-grupo_estacoes.png" alt="">
                         <p class="card-nome">Trap e Pop</p>

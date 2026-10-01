@@ -1,0 +1,204 @@
+/* ===== TELA DE ARTISTA ===== */
+
+/* cartões do painel central */
+.artista,
+.destaques {
+  padding: 20px;
+  border: 2px solid var(--borda-card);
+  border-radius: 20px;
+}
+
+.artista {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin-bottom: 20px;
+}
+
+/* ---------- Artista ---------- */
+.artista-foto {
+  width: 300px;
+  height: 300px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #ccc;
+}
+
+.artista-info {
+  min-width: 0;
+}
+
+.artista-info h1 {
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+.artista-genero {
+  margin: 4px 0 12px;
+  font-size: 20px;
+}
+
+.artista-acoes {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 20px;
+  white-space: nowrap;
+}
+
+.botao-inscrever {
+  width: 150px;
+  height: 50px;
+  border-radius: 10px;
+  background: var(--vermelho);
+  color: var(--texto-principal);
+  font: inherit;
+  font-size: 25px;
+}
+
+/* ---------- Títulos ---------- */
+.titulo-secao {
+  margin-bottom: 20px;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.titulo-secao span {
+  color: var(--vermelho);
+}
+
+/* ---------- Álbuns ---------- */
+.carrossel {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.carrossel-botao {
+  font-size: 18px;
+}
+
+.lista-albuns {
+  flex: 1;
+  min-width: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 25px;
+  padding: 10px 15px 20px;
+  justify-items: center; 
+}
+
+.album-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  text-align: center;  
+  width: 100%;
+  max-width: 200px;  
+  cursor: pointer;  
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.album-card:hover {
+  background: var(--fundo-card-hover); 
+}
+
+.album-card img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  object-fit: cover;
+  background: #ccc;
+  box-shadow: 4px 4px 15px var(--vermelho);
+}
+
+.album-card strong {
+  margin-top: 8px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.album-card span {
+  display: block;
+  font-size: 10px;
+  color: var(--texto-suave);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.destaques hr {
+  margin: 10px 0 30px;
+  border: 0;
+  border-top: 1px solid var(--vermelho);
+}
+
+/* ---------- Músicas ---------- */
+.musica {
+  display: grid;
+  grid-template-columns: 40px 50px 1fr 24px 45px;
+  align-items: center;
+  column-gap: 20px;
+  padding: 8px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.musica:hover {
+  background: var(--fundo-card-hover);
+}
+
+.musica-numero {
+  font-size: 30px;
+  color: rgba(204, 204, 204, 0.8);
+}
+
+.musica-capa {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.musica-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.musica-info strong {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.1;
+  color: var(--texto-principal);
+}
+
+.musica-info span {
+  font-size: 14px;
+  color: #ccc;
+}
+
+.musica-favoritar {
+  font-size: 20px;
+  color: var(--vermelho);
+  opacity: 0.8;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.musica-favoritar:hover {
+    opacity: 1;
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 6px color-mix(in srgb, var(--vermelho) 80%, transparent));
+}
+
+.musica-duracao {
+  min-width: 45px;
+  font-size: 20px;
+  color: #ccc;
+  text-align: right;
+}

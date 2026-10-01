@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Capsula Sonora</title>
-    <link rel="stylesheet" href="capsula.css">
+    <title>Configurações - MusicHub</title>
+    <link rel="stylesheet" href="config.css">
     <link rel="stylesheet" href="../style/global.css">
     <link rel="shortcut icon" href="../imgs/Logo_superior_esquerdo-MusicHub.svg" type="image/x-icon">
 
@@ -16,7 +16,7 @@
 
     <div class="layout">
         <header class="cabecalho">
-            <a href="#" class="logo">
+            <a href="../home/home.html" class="logo">
                 <img src="../imgs/Logo_superior_esquerdo-MusicHub.svg" alt="MusicHUB Logo">
             </a>
 
@@ -37,16 +37,18 @@
                 <a href="../home/home.html" class="home-icone"><img src="../imgs/home.svg" alt="Home"></a>
                 <a href="../explore/explore.html"><i class="fa-regular fa-compass"></i></a>
                 <a href="../favoritos/favoritos.html"><i class="fa-regular fa-heart"></i></a>
-                <a href="#" class="ativo"><img src="../imgs/musicas.svg" alt="Músicas"></a>
+                <a href="../capsulaSonora/capsula.html"><img src="../imgs/musicas.svg" alt="Músicas"></a>
             </div>
 
             <hr>
 
             <div class="menu-grupo">
-                <a href="../configurações/conta.html"><img src="../imgs/configuracoes.svg" alt="Configurações"></a>
+                <a href="../configurações/conta.html" class="ativo"><img src="../imgs/configuracoes-cheio.svg"
+                        alt="Configurações"></a>
                 <a href="../login/login.html"><img src="../imgs/sair.svg" alt="Sair"></a>
             </div>
         </nav>
+
         <aside class="player-lateral">
 
             <section class="player-atual">
@@ -158,48 +160,71 @@
                     </li>
                 </ul>
             </section>
-
         </aside>
 
         <main class="conteudo-principal">
-            <section class="banner">
-                <h2 class="banner-chamada">ATIVIDADE <span>SONORA</span></h2>
-                <div class="caixas">
 
-                    <article class="retangulo">
-                        <p class="pequeno-titulo">Agosto de 2026</p>
-                        <h2>Ainda estamos analisando sua atividade desse mês.</h2>
-                        <span>Volte mais tarde</span>
-                    </article>
+            <div class="configuracoes">
+                <h1 class="configuracoes-titulos">Configurações</h1>
 
-                    <article class="retangulo2">
-                        <div class="informacoes-retangulo">
-                            <p class="pequeno-titulo">Junho de 2026</p>
-                            <span>Tempo ouvindo</span>
-                            <h2>5.067 minutos</h2>
-                        </div>
+                <nav class="configuracoes-aba">
+                    <a href="" class="item-aba-ativa">Conta</a>
+                    <a href="../configurações/informações.html" class="item-aba">Informações</a>
+                    <a href="../configurações/personalizar.html" class="item-aba">Personalizar perfil</a>
+                </nav>
 
-                        <div class="informacoes-musica">
+                <hr class="divisao" />
+            </div>
 
-                            <a href="../tela-artista/tela-artista.html">
-                                <div class="maisOuvido">
-                                    <span>Artista mais ouvido</span>
-                                    <h2>Matuê</h2>
-                                    <img src="../imgs/artistas-matuezao.png" alt="Matue-mais-ouvido">
-                                </div>
-                            </a>
-
-                            <div class="musicaOuvida">
-                                <span>Música mais ouvida</span>
-                                <h2>Artista Genérico</h2>
-                                <img src="../imgs/musica_recomenda-Artista_generico.png" alt="Musica_escutada">
-                            </div>
-
-                        </div>
-
-                    </article>
+            <div class="grid-seu-email">
+                <div class="email-colunas">
+                    <h2 class="configuracoes-titulo">Seu E-Mail</h2>
+                    <p class="configuracoes-subtitulo">Adicione mais um ou mude de E-Mail.</p>
                 </div>
-            </section>
+
+                <div class="email-colunas">
+                    <button class="botao-configuracoes">Adicionar E-mail</button>
+                    <div class="email-informacoes">
+                        <span class="email-texto-transparente">E-Mails adicionados:</span>
+                        <span class="email-texto">email@alunosenai2.com</span>
+                    </div>
+                </div>
+
+                <div class="email-colunas">
+                    <button class="botao-configuracoes">Alterar E-mail</button>
+                    <div class="email-informacoes">
+                        <span class="email-texto-transparente">E-Mail principal:</span>
+                        <span class="email-texto">email@alunosenai.com</span>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="configuracoes-titulo">Sua senha</h2>
+            <div class="grid-senha">
+                <p class="configuracoes-subtitulo">Altere a sua senha atual (alteração permitida a cada 15 dias).</p>
+                <button class="botao-configuracoes">Alterar senha</button>
+            </div>
+
+            <h2 class="configuracoes-titulo">Idioma</h2>
+            <div class="grid-idiomas">
+                <p class="configuracoes-subtitulo">Escolha um idioma. As alterações são feitas instantaneamente.</p>
+                <button class="botao-configuracoes">Português(Brasil)
+                    <img src="../imgs/seta-baixo.svg" alt="">
+                </button>
+            </div>
+
+            <h2 class="configuracoes-titulo">Plano plus</h2>
+            <div class="grid-plano-plus">
+                <p class="configuracoes-subtitulo">Promoção de 67% de desconto(5 dias restantes).</p>
+                <button class="botao-configuracoes">Assinar plano</button>
+            </div>
+
+            <h2 class="configuracoes-titulo">Sua(s) Conta(s)</h2>
+            <div class="grid-suas-contas">
+                <p class="configuracoes-subtitulo">Delete a sua conta ou escolha a conta logada nos E-Mails adicionados.
+                </p>
+                <button class="botao-configuracoes-preto">DELETAR CONTA</button>
+            </div>
 
             <footer class="rodape">
                 <div class="rodape-marca">
@@ -233,11 +258,9 @@
                         </div>
                     </div>
                 </div>
+
                 <p class="rodape-copy">©2026 Music HUB - Todos os direitos reservados</p>
             </footer>
-
         </main>
-
+    </div>
 </body>
-
-</html>

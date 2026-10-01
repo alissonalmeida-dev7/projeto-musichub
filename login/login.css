@@ -1,18 +1,14 @@
 /*  MAIN */
 
 .conteudo {
-
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-image: url(../imgs/OBJECTS.svg);
-    background-position: center 80%;
-
-    
     height: 90vh;
-
     display: flex;
-    justify-content: center;
-    align-items: center;
+    overflow-y: auto;
+
+    background-image: url(../imgs/OBJECTS.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 110%;
+    background-position: center 120%;
 }
 
 /* AREA LOGIN */
@@ -20,63 +16,45 @@
 .login {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    gap: clamp(20px, 4vh, 50px);
+
+    width: min(92%, 670px);
+    min-height: 70vh;
+    margin: auto;
+    padding: clamp(24px, 5vh, 50px) clamp(24px, 6vw, 100px);
 
     background-color: #1D3557;
-
-    width: 35%;
-
-    padding: 50px 100px;
-
+    border: 1px solid var(--vermelho);
     border-radius: 30px;
-
-    gap: 50px;
+    box-shadow: inset 0 0 50px var(--vermelho);
 }
 
 /* CABEÇALHO DO LOGIN */
 
 .cabecalho-login {
-  height: 10vh;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 50px;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 clamp(16px, 3vw, 50px);
 }
 
 header.cabecalho-login .logo img {
-    height: 100px ;
-    width: auto ;
+    height: min(100px, 9vh);
+    width: auto;
     max-height: none;
     max-width: none;
-    flex-shrink: 0;   
-    filter: drop-shadow(0 0 6px color-mix(in srgb, var(--vermelho) 80%, transparent));   
+    flex-shrink: 0;
+    filter: drop-shadow(0 0 6px color-mix(in srgb, var(--vermelho) 80%, transparent));
 }
 
 header.cabecalho-login .icone-btn.home {
-    font-size: 40px ;
+    font-size: 40px;
 }
 
 .logo span {
     font-size: 1.4em;
-}
-
-.login {
-    display: flex;
-    border: 1px solid var(--vermelho);
-    height: 70vh;
-    box-shadow: inset 0 0 50px var(--vermelho);
-    justify-content: center;
-}
-
-.login-cabecalho-login {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    gap: 5px;
-}
-
-.login-cabecalho-login img {
-    margin-bottom: 15px;
 }
 
 .login-cabecalho {
@@ -84,25 +62,28 @@ header.cabecalho-login .icone-btn.home {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-.login-cabecalho-login h1 {
-    font-size: 1.5em;
-    
+    text-align: center;
+
+    gap: 5px;
 }
 
-.login-cabecalho-login p {
+.login-cabecalho h1 {
+    font-size: 1.5em;
+}
+
+.login-cabecalho p {
     font-size: 1em;
 }
 
 .home-icone {
-  opacity: 0.8;
-  transition: all 0.2s;
+    opacity: 0.8;
+    transition: all 0.2s;
 }
 
 .home-icone:hover {
-  opacity: 1;
-  transform: scale(1.1);
-  filter: drop-shadow(0 0 6px color-mix(in srgb, var(--vermelho) 80%, transparent));
+    opacity: 1;
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 6px color-mix(in srgb, var(--vermelho) 80%, transparent));
 }
 
 /* FORMULARIO */
@@ -112,7 +93,6 @@ form {
     flex-direction: column;
 
     gap: 20px;
-
 }
 
 /* CAMPOS */
@@ -147,7 +127,7 @@ input,
 
     font-size: 1em;
 
-    color: #ffffff50
+    color: #ffffff50;
 }
 
 .campo input::placeholder {
@@ -194,11 +174,10 @@ input,
     transition: transform 0.2s;
 }
 
-.botao-entrar:hover{
+.botao-entrar:hover {
     cursor: pointer;
     background-color: #2FD6CB;
-    color: #1D3557
-    ;
+    color: #1D3557;
     transform: translateY(-3px);
 }
 
@@ -221,7 +200,7 @@ input,
     box-shadow: 0 2px 2px var(--vermelho);
 }
 
-.botao-google:hover{
+.botao-google:hover {
     cursor: pointer;
     transform: translateY(-3px);
 }

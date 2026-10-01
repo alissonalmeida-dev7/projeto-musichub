@@ -7,9 +7,9 @@
     <title>Login - MusicHub</title>
     <link rel="stylesheet" href="login.css">
     <link rel="stylesheet" href="../style/global.css">
+    <link rel="shortcut icon" href="../imgs/Logo_superior_esquerdo-MusicHub.svg" type="image/x-icon">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&display=swap" rel="stylesheet">
 
 </head>
 
@@ -40,7 +40,7 @@
                     <label for="senha">Senha</label>
                     <div class="campo-senha">
                         <input required type="password" id="senha" placeholder="*********">
-                        <button type="button" id="mostrar-senha" class="botao-olho">
+                        <button type="button" id="mostrar-senha" class="botao-olho" aria-label="Mostrar senha">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round" class="lucide lucide-eye">
@@ -52,15 +52,15 @@
                     </div>
                 </div>
 
-                <button class="botao-entrar">Entrar</button>
-                <button class="botao-google">
+                <button type="submit" class="botao-entrar">Entrar</button>
+                <button type="button" class="botao-google">
                     <img src="../imgs/logos_google-icon.svg" alt="Logo Google">
                     <span>Continuar com Google</span>
                 </button>
             </form>
         </section>
     </main>
-    
+
     <script src="login.js"></script>
 </body>
 
