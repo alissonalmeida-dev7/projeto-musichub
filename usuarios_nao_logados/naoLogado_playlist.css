@@ -1,0 +1,327 @@
+/* ===== CONTAINER DE MUSICA ===== */
+.caixas-conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.musica-principal {
+    padding: 16px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    border: 2px solid var(--borda-card);
+}
+
+.capa img {
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+}
+
+.album {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+}
+
+.infos-album {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.infos-album .tipo {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.infos-album h3 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.detalhes {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+/* bolinha antes de cada item, menos o primeiro */
+.detalhes span + span::before {
+    content: "";
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    margin-right: 10px;
+    border-radius: 50%;
+    background: var(--texto-principal);
+    vertical-align: middle;
+}
+
+.infos-icones {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.infos-icones i {
+    font-size: 35px;
+    color: var(--vermelho);
+    cursor: pointer;
+    opacity: 0.8;
+    transition: all 0.2s;
+}
+
+.infos-icones i:hover {
+    opacity: 1;
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 6px color-mix(in srgb, var(--vermelho) 80%, transparent));
+}
+
+/* ===== CONTAINER LISTA MUSICAS ===== */
+.recomendacoes {
+    padding: 16px;
+    border-radius: 20px;
+    border: 2px solid var(--borda-card);
+}
+
+.recomendacoes .titulo {
+    display: grid;
+    grid-template-columns: 1fr 180px 89px;   
+    column-gap: 20px;
+    align-items: center;
+    padding: 0 8px 12px;
+}
+
+.recomendacoes hr {
+    border: none;
+    border-top: 1px solid var(--vermelho);
+    margin: 0 0 16px;
+}
+
+.titulo-texto {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: var(--vermelho);
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.titulo-texto span {
+    width: 40px;   
+}
+
+.titulo-texto h2 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+.titulo-data {
+    font-size: 22px;
+    color: var(--vermelho);
+}
+
+.icone-relogio {
+    justify-self: end;
+}
+
+.icone-relogio i {
+    font-size: 35px;
+    color: var(--vermelho);
+}
+
+.musica-linha {
+    display: grid;
+    grid-template-columns: 40px 50px 1fr 180px 24px 45px;
+    align-items: center;
+    column-gap: 20px;
+    padding: 8px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.musica-linha:hover {
+    background: var(--fundo-card-hover);
+}
+
+.numero {
+    font-size: 30px;
+    color: rgba(204, 204, 204, 0.8);
+}
+
+.musica-capa {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.musica-textos {
+    min-width: 0;   
+    display: flex;
+    flex-direction: column;
+}
+
+.musica-textos strong,
+.musica-textos span {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.musica-textos strong {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.1;
+    color: var(--texto-principal);
+}
+
+.musica-textos span {
+    font-size: 14px;
+    color: #ccc;
+}
+
+.adicionada {
+    font-size: 16px;
+    color: #ccc;
+}
+
+.musica-linha i {
+    justify-self: center;
+    font-size: 20px;
+    color: var(--vermelho);
+    opacity: 0.8;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.musica-linha i:hover {
+    opacity: 1;
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 6px color-mix(in srgb, var(--vermelho) 80%, transparent));
+}
+
+.duracao {
+    min-width: 45px;
+    font-size: 20px;
+    color: #ccc;
+    text-align: right;
+}
+
+/* ===== RECOMENDAÇÕES ===== */
+.sugestoes {
+    margin-top: 50px;
+}
+
+.sugestoes-titulo {
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.sugestoes-sub {
+    margin: 4px 0 16px;
+    font-size: 12px;
+    color: var(--texto-suave);
+}
+
+.sugestoes-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px 20px;
+}
+
+.sugestao-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.02);
+    transition: background 0.2s;
+    cursor: pointer;
+}
+
+.sugestao-item:hover {
+    background: var(--fundo-card-hover);
+}
+
+.sugestao-item img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.sugestao-info {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.sugestao-info strong,
+.sugestao-info span {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.sugestao-info strong {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.sugestao-info span {
+    font-size: 12px;
+    color: var(--texto-suave);
+}
+
+.btn-adicionar {
+    padding: 6px 18px;
+    border: 1px solid var(--vermelho);
+    border-radius: 999px;
+    font-family: var(--fonte-principal);
+    font-size: 14px;
+    color: var(--vermelho);
+    transition: all 0.2s;
+}
+
+.btn-adicionar:hover {
+    opacity: 1;
+    background: var(--vermelho);
+    color: var(--texto-principal);
+}
+
+.musica-textos span:hover,
+.sugestao-info span:hover,
+.infos-album p span:hover,
+.fila-info span:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.sessao {
+  background-color: #e53e3e;
+  color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 24px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  width: fit-content;
+  margin-bottom: 0;
+  transition: background-color 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}

@@ -1,0 +1,265 @@
+/* ===== CONTAINER DE MUSICA ===== */
+.caixas-conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.musica-principal {
+    padding: 16px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    border: 2px solid var(--borda-card);
+}
+
+.capa img {
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+}
+
+.album {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+}
+
+.infos-album {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.infos-album .tipo {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.infos-album h3 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.detalhes {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+/* bolinha antes de cada item, menos o primeiro */
+.detalhes span + span::before {
+    content: "";
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    margin-right: 10px;
+    border-radius: 50%;
+    background: var(--texto-principal);
+    vertical-align: middle;
+}
+
+.infos-icones {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.infos-icones i {
+    font-size: 35px;
+    color: var(--vermelho);
+    cursor: pointer;
+    opacity: 0.8;
+    transition: all 0.2s;
+}
+
+.infos-icones i:hover {
+    opacity: 1;
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 6px color-mix(in srgb, var(--vermelho) 80%, transparent));
+}
+
+/* ===== CONTAINER LISTA MUSICAS ===== */
+.recomendacoes {
+    padding: 16px;
+    border-radius: 20px;
+    border: 2px solid var(--borda-card);
+}
+
+.recomendacoes .titulo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8px 12px;
+}
+
+.recomendacoes hr {
+    border: none;
+    border-top: 1px solid var(--vermelho);
+    margin: 0 0 16px;
+}
+
+.titulo-texto {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: var(--vermelho);
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.titulo-texto h2 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+.icone-relogio i {
+    font-size: 35px;
+    color: var(--vermelho);
+}
+
+.musica-linha {
+    display: grid;
+    grid-template-columns: 40px 1fr auto auto;
+    align-items: center;
+    column-gap: 20px;
+    padding: 8px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.musica-linha:hover {
+    background: var(--fundo-card-hover);
+}
+
+.numero {
+    font-size: 30px;
+    color: rgba(204, 204, 204, 0.8);
+}
+
+.musica-textos {
+    display: flex;
+    flex-direction: column;
+}
+
+.musica-textos strong {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.1;
+    color: var(--texto-principal);
+}
+
+.musica-textos span {
+    font-size: 14px;
+    color: #ccc;
+}
+
+.musica-linha i {
+    font-size: 20px;
+    color: var(--vermelho);
+    opacity: 0.8;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.musica-linha i:hover {
+    opacity: 1;
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 6px color-mix(in srgb, var(--vermelho) 80%, transparent));
+}
+
+.duracao {
+    min-width: 45px;
+    font-size: 20px;
+    color: #ccc;
+    text-align: right;
+}
+
+/* ===== SEÇÃO DE RELACIONADOS ===== */
+
+.relacionados {
+    margin-top: 50px;
+}
+
+.secao-titulo {
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    margin-bottom: 24px; 
+}
+
+.secao-titulo span {
+    color: var(--vermelho);
+}
+
+.cards-carrossel {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.card-capa {
+  text-align: center;
+  padding: 6px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.card-capa:hover {
+    background: var(--fundo-card-hover); 
+}
+
+.card-capa img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.card-nome {
+  margin-top: 8px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.card-sub {
+  display: block;
+  font-size: 10px;
+  color: var(--texto-suave);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.musica-textos span:hover,
+.infos-album p span:hover,
+.card-capa span:hover,
+.sugestao-info span:hover,
+.fila-info span:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.sessao {
+  background-color: #e53e3e;
+  color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 24px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  width: fit-content;
+  margin-bottom: 0;
+  transition: background-color 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
