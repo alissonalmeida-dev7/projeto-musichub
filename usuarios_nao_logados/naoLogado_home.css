@@ -186,9 +186,11 @@
 
 .card-capa {
   text-align: center;
-  padding: 6px;
+  padding: 8px;
   border-radius: 8px;
   cursor: pointer;
+  width: 80%;
+  justify-self: center;  
 }
 
 .card-capa:hover {
@@ -226,9 +228,11 @@
 }
 
 .artista-item {
-  padding: 6px;
+  padding: 8px;
   border-radius: 8px;
   cursor: pointer;
+  width: 80%;
+  justify-self: center;
 }
 
 .artista-item:hover {
