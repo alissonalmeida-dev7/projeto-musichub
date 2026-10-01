@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tela de Música - MusicHub</title>
+    <title>Tela de Artista - MusicHub</title>
 
     <link rel="stylesheet" href="../style/global.css">
-    <link rel="stylesheet" href="tela-musica.css">
+    <link rel="stylesheet" href="tela-artista.css">
+    <link rel="shortcut icon" href="../imgs/Logo_superior_esquerdo-MusicHub.svg" type="image/x-icon">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="shortcut icon" href="../imgs/Logo_superior_esquerdo-MusicHub.svg" type="image/x-icon">
 </head>
 
 <body>
@@ -50,164 +50,84 @@
 
         <main class="conteudo-principal">
 
-            <div class="caixas-conteudo">
-
-                <div class="musica-principal">
-
-                    <div class="capa">
-                        <img src="../imgs/musica_recomenda-Largado_as_tracas.png" alt="">
+            <section class="artista">
+                <img class="artista-foto" src="../imgs/artistas-matuezao.png" alt="Foto do artista">
+                <div class="artista-info">
+                    <h1>Matuê</h1>
+                    <p class="artista-genero">Trap</p>
+                    <div class="artista-acoes">
+                        <button class="botao-inscrever" type="button">Inscrever-se</button>
+                        <span>9.999 Inscritos</span>
                     </div>
+                </div>
+            </section>
 
-                    <div class="album">
-                        <div class="infos-album">
-                            <p class="tipo">Música</p>
-                            <h3>Largado as traças</h3>
-                            <p class="detalhes">
-                                <span>Nicolas e Guilherme</span>
-                                <span>2026</span>
-                                <span>4 minutos</span>
-                            </p>
+            <section class="destaques">
+                <h2 class="titulo-secao">Albuns <span>Principais</span></h2>
+
+                <div class="carrossel">
+                    <ul class="lista-albuns">
+                        <li class="album-card">
+                            <img src="../imgs/musica_recomenda-Backstage.png" alt="Foto da música">
+                            <strong>Xtranho</strong>
+                            <span>Matuê</span>
+                        </li>
+                        <li class="album-card">
+                            <img src="../imgs/Capa_do_álbum_333.png" alt="Foto da música">
+                            <strong>333</strong>
+                            <span>Matuê</span>
+                        </li>
+                        <li class="album-card">
+                            <img src="../imgs/Capa_do_álbum_Máquina_do_Tempo 1.png" alt="Foto da música">
+                            <strong>Maquina do tempo</strong>
+                            <span>Matuê</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <hr>
+
+                <h2 class="titulo-secao">Músicas <span>Principais</span></h2>
+
+                <ol class="lista-musicas">
+                    <li class="musica">
+                        <span class="musica-numero">1</span>
+                        <img class="musica-capa" src="../imgs/Capa_do_álbum_Máquina_do_Tempo 1.png" alt="">
+                        <div class="musica-info">
+                            <strong>Gorilla Roxo</strong>
+                            <span>Matuê</span>
                         </div>
-
-                        <div class="infos-icones">
-                            <i class="fa-solid fa-play"></i>
+                        <button class="musica-favoritar" type="button" aria-label="Favoritar">
                             <i class="fa-regular fa-heart"></i>
-                            <i class="fa-solid fa-shuffle"></i>
-                            <i class="fa-regular fa-circle-down"></i>
-                            <i class="fa-solid fa-ellipsis"></i>
+                        </button>
+                        <span class="musica-duracao">2:45</span>
+                    </li>
+                    <li class="musica">
+                        <span class="musica-numero">2</span>
+                        <img class="musica-capa" src="../imgs/Capa_do_álbum_Máquina_do_Tempo 1.png" alt="">
+                        <div class="musica-info">
+                            <strong>Máquina do Tempo</strong>
+                            <span>Matuê</span>
                         </div>
-                    </div>
-
-                </div>
-
-
-                <div class="recomendacoes">
-
-                    <div class="rec-cima">
-
-                        <div class="titulo">
-                            <div class="titulo-texto">
-                                <h2>Recomendações</h2>
-                            </div>
+                        <button class="musica-favoritar" type="button" aria-label="Favoritar">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                        <span class="musica-duracao">3:50</span>
+                    </li>
+                    <li class="musica">
+                        <span class="musica-numero">3</span>
+                        <img class="musica-capa" src="../imgs/musica_recomenda-Backstage.png" alt="">
+                        <div class="musica-info">
+                            <strong>Backstage</strong>
+                            <span>Matuê</span>
                         </div>
-                        <div class="cima">
-
-                            <div class="musicas-recomendadas">
-                                <div class="capa-recomendacoes">
-                                    <img src="../imgs/musica_recomenda-O_nosso_santo.png" alt="">
-                                </div>
-                                <div class="info-musica">
-                                    <h3>O Nosso Santo Bateu</h3>
-                                    <p>Matheus e Kauan</p>
-                                </div>
-                            </div>
-                            <div class="musicas-recomendadas">
-                                <div class="capa-recomendacoes">
-                                    <img src="../imgs/novidades_semana-Te_esperando.png" alt="">
-                                </div>
-                                <div class="info-musica">
-                                    <h3>Te Esperando</h3>
-                                    <p>Luan Santana</p>
-                                </div>
-                            </div>
-                            <div class="musicas-recomendadas">
-                                <div class="capa-recomendacoes">
-                                    <img src="../imgs/novidades_semana-Medo_bobo.png" alt="">
-                                </div>
-                                <div class="info-musica">
-                                    <h3>Medo Bobo</h3>
-                                    <p>Maiara e Maraísa</p>
-                                </div>
-                            </div>
-                            <div class="musicas-recomendadas">
-                                <div class="capa-recomendacoes">
-                                    <img src="../imgs/musica_recomenda-Anti-amor.png" alt="">
-                                </div>
-                                <div class="info-musica">
-                                    <h3>Anti-Amor</h3>
-                                    <p>Gustavo Mioto</p>
-                                </div>
-                            </div>
-                            <div class="musicas-recomendadas">
-                                <div class="capa-recomendacoes">
-                                    <img src="../imgs/musica_recomenda-Esqueca-me.png" alt="">
-                                </div>
-                                <div class="info-musica">
-                                    <h3>Esqueça-me</h3>
-                                    <p>Marília Mendonça</p>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <hr>
-
-                    <div class="outras-doartista">
-
-                        <div class="titulo">
-                            <div class="titulo-texto">
-                                <h2>Outras do Artista</h2>
-                            </div>
-                        </div>
-
-                        <div class="baixo">
-
-                            <div class="musicas-recomendadas">
-                                <div class="capa-recomendacoes">
-                                    <img src="../imgs/image 163.png" alt="">
-                                </div>
-                                <div class="info-musica">
-                                    <h3>Cadeira Cativa</h3>
-                                    <p>Zé Neto e Cristiano</p>
-                                </div>
-                            </div>
-                            <div class="musicas-recomendadas">
-                                <div class="capa-recomendacoes">
-                                    <img src="../imgs/image 164.png" alt="">
-                                </div>
-                                <div class="info-musica">
-                                    <h3>Sonha Comigo</h3>
-                                    <p>Zé Neto e Cristiano</p>
-                                </div>
-                            </div>
-                            <div class="musicas-recomendadas">
-                                <div class="capa-recomendacoes">
-                                    <img src="../imgs/image 165.png" alt="">
-                                </div>
-                                <div class="info-musica">
-                                    <h3>Whisky e Gelo</h3>
-                                    <p>Zé Neto e Cristiano</p>
-                                </div>
-                            </div>
-                            <div class="musicas-recomendadas">
-                                <div class="capa-recomendacoes">
-                                    <img src="../imgs/musica_recomenda-Largado_as_tracas.png" alt="">
-                                </div>
-                                <div class="info-musica">
-                                    <h3>Ontem Era Eu</h3>
-                                    <p>Zé Neto e Cristiano</p>
-                                </div>
-                            </div>
-                            <div class="musicas-recomendadas">
-                                <div class="capa-recomendacoes">
-                                    <img src="../imgs/image 166.png" alt="">
-                                </div>
-                                <div class="info-musica">
-                                    <h3>Alô Ambev</h3>
-                                    <p>Zé Neto e Cristiano</p>
-                                </div>
-                            </div>
-
-
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-
-
+                        <button class="musica-favoritar" type="button" aria-label="Favoritar">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                        <span class="musica-duracao">4:14</span>
+                    </li>
+                </ol>
+            </section>
 
             <footer class="rodape">
                 <div class="rodape-marca">

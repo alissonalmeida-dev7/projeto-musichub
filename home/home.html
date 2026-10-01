@@ -7,6 +7,7 @@
     <title>Home - MusicHub</title>
     <link rel="stylesheet" href="home.css">
     <link rel="stylesheet" href="../style/global.css">
+    <link rel="shortcut icon" href="../imgs/Logo_superior_esquerdo-MusicHub.svg" type="image/x-icon">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
@@ -26,7 +27,8 @@
 
             <div class="acoes">
                 <button class="icone-btn sino" aria-label="Notificações"><i class="fa-regular fa-bell"></i></button>
-                <a href="../login/login.html"><button class="icone-btn avatar" aria-label="Perfil"><i class="fa-solid fa-circle-user"></i></button></a>
+                <a href="../login/login.html"><button class="icone-btn avatar" aria-label="Perfil"><i
+                            class="fa-solid fa-circle-user"></i></button></a>
             </div>
         </header>
 
@@ -41,13 +43,13 @@
             <hr>
 
             <div class="menu-grupo">
-                <a href="#"><img src="../imgs/configuracoes.svg" alt="Configurações"></a>
-                <a href="#"><img src="../imgs/sair.svg" alt="Sair"></a>
+                <a href="../configurações/conta.html"><img src="../imgs/configuracoes.svg" alt="Configurações"></a>
+                <a href="../login/login.html"><img src="../imgs/sair.svg" alt="Sair"></a>
             </div>
         </nav>
 
         <main class="conteudo-principal">
-            
+
 
             <section class="banner">
                 <h2 class="banner-chamada">NAVEGUE NOS <span>MELHORES</span> SONS</h2>
@@ -64,7 +66,9 @@
 
                     <div class="banner-slides">
                         <div class="banner-slide ativo" data-titulo="SERTANEJO">
-                            <img src="../imgs/sertanejp-rodape.png" alt="Sertanejo">
+                            <a href="../tela_Estacoes/estacoes.html">
+                                <img src="../imgs/sertanejp-rodape.png" alt="Sertanejo">
+                            </a>
                         </div>
                         <div class="banner-slide" data-titulo="TRAP">
                             <img src="../imgs/trap.jpg" alt="Trap">
@@ -192,10 +196,12 @@
                 <h2 class="secao-titulo">ARTISTAS</h2>
 
                 <div class="artistas-carrossel">
-                    <div class="artista-item">
-                        <img src="../imgs/artistas-matuezao.png" alt="">
-                        <p>Matue</p>
-                    </div>
+                    <a href="../tela-artista/tela-artista.html">
+                        <div class="artista-item">
+                            <img src="../imgs/artistas-matuezao.png" alt="">
+                            <p>Matue</p>
+                        </div>
+                    </a>
                     <div class="artista-item">
                         <img src="../imgs/artistas-periclao_novo.png" alt="">
                         <p>Pericles</p>
@@ -219,10 +225,13 @@
                         <img src="../imgs/trap_e_funk-grupo_estacoes.png" alt="">
                         <p class="card-nome">Trap e Funk</p>
                     </div>
-                    <div class="card-capa">
-                        <img src="../imgs/sertanejo_e_pagode-grupo_estacoes.png" alt="">
-                        <p class="card-nome">Sertanejo e Pagode</p>
-                    </div>
+                    <a href="../tela_Estacoes/estacoes.html">
+                        <div class="card-capa">
+                            <img src="../imgs/sertanejo_e_pagode-grupo_estacoes.png" alt="">
+                            <p class="card-nome">Sertanejo e Pagode</p>
+                        </div>
+                    </a>
+
                     <div class="card-capa">
                         <img src="../imgs/trap_e_pop-grupo_estacoes.png" alt="">
                         <p class="card-nome">Trap e Pop</p>
