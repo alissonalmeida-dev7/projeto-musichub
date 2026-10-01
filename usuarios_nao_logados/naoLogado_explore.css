@@ -1,0 +1,317 @@
+/* ===== BANNER / CARROSSEL ===== */
+.banner {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.banner-chamada {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    font-size: 28px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+.banner-chamada i {
+    width: 32px;
+    height: 32px;
+    margin-left: 15px;
+    color: #E63946;
+    filter: drop-shadow(0 0 6px color-mix(in srgb, var(--vermelho) 80%, transparent));
+}
+
+.banner-chamada span {
+    color: var(--vermelho);
+}
+
+.banner-carrossel {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 260px;
+}
+
+.banner-slides {
+    position: relative;
+    width: 79%;
+    height: 100%;
+}
+
+.banner-slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+    border-radius: 50px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px var(--vermelho);
+}
+
+.banner-lateral {
+    position: absolute;
+    background: #21262a;
+    border-radius: 50px;
+    box-shadow: 0 4px 10px var(--vermelho);
+}
+
+.banner-lateral.externo-esq {
+    left: 0;
+    width: 66%;
+    top: 15%;
+    bottom: 15%;
+}
+
+.banner-lateral.externo-dir {
+    right: 0;
+    width: 66%;
+    top: 15%;
+    bottom: 15%;
+}
+
+.banner-lateral.interno-esq {
+    left: 4.5%;
+    width: 69%;
+    top: 6%;
+    bottom: 6%;
+}
+
+.banner-lateral.interno-dir {
+    right: 3.3%;
+    width: 69%;
+    top: 6%;
+    bottom: 6%;
+}
+
+.banner-slide.ativo {
+    opacity: 1;
+}
+
+.banner-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner-seta {
+    position: absolute;
+    top: 50%;
+    z-index: 3;
+    transform: translate(-50%, -50%);
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: var(--fundo-escuro);
+    font-size: 20px;
+    color: var(--vermelho);
+}
+
+.banner-seta.esquerda {
+    left: 10.5%;
+}
+
+.banner-seta.direita {
+    left: 89.5%;
+}
+
+.banner-titulo {
+    text-align: center;
+    color: var(--vermelho);
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    margin-top: 14px;
+}
+
+/* ===== SEÇÕES ===== */
+.secao-titulo {
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    margin: 32px 0 16px 0;
+}
+
+.secao-titulo span {
+    color: var(--vermelho);
+}
+
+/* MÚSICAS RECOMENDADAS */
+.musicas-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px 20px;
+}
+
+.musica-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.02);
+    transition: background 0.2s;
+    cursor: pointer;
+}
+
+.musica-item:hover {
+    background: var(--fundo-card-hover);
+}
+
+.musica-item img {
+    width: 42px;
+    height: 42px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.musica-info {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.musica-info strong {
+    font-size: 13px;
+    font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.musica-info span {
+    font-size: 11px;
+    color: var(--texto-suave);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* NOVIDADES & ESTAÇÕES CARROSSEL */
+.cards-carrossel {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+}
+
+.card-capa {
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 80%;
+    padding: 8px;
+    justify-self: center;   
+}
+
+.card-capa:hover {
+    background: var(--fundo-card-hover);
+}
+
+.card-capa img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.card-nome {
+    margin-top: 8px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.card-sub {
+    display: block;
+    font-size: 10px;
+    color: var(--texto-suave);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* ARTISTAS */
+.artistas-carrossel {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    text-align: center;
+}
+
+.artista-item {
+    padding: 6px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.artista-item:hover {
+    background: var(--fundo-card-hover);
+}
+
+.artista-item img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid var(--vermelho);
+    box-shadow: 0 4px 25px var(--vermelho);
+}
+
+.artista-item p {
+    margin-top: 8px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.artista-item:hover p {
+    text-decoration: underline;
+}
+
+.musica-info span:hover,
+.card-sub:hover,
+.player-artista:hover,
+.fila-info span:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* linha vermelha separando as seções */
+.top-rankings::before,
+.estilos::before,
+.descobertas::before {
+    content: "";
+    display: block;
+    width: 68%;
+    height: 1px;
+    margin: 0 auto;
+    background: var(--vermelho);
+}
+.top-rankings,
+.estilos,
+.descobertas {
+    margin-top: 40px;
+}
+
+.sessao {
+  background-color: #e53e3e;
+  color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 24px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  width: fit-content;
+  margin-bottom: 0;
+  transition: background-color 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
