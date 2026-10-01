@@ -10,14 +10,17 @@
     border-radius: 20px;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
     gap: 40px;
     border: 2px solid var(--borda-card);
 }
 
 .capa img {
-    height: 300px;
-    width: 300px;
+    height: clamp(180px, 20vw, 300px);
+    width: clamp(180px, 20vw, 300px);
     border-radius: 10px;
+    object-fit: cover;
 }
 
 .album {
@@ -25,6 +28,8 @@
     flex-direction: column;
     justify-content: center;
     gap: 24px;
+    flex: 1 1 280px;
+    min-width: 0;
 }
 
 .infos-album {
@@ -39,12 +44,13 @@
 }
 
 .infos-album h3 {
-    font-size: 40px;
+    font-size: clamp(28px, 3vw, 40px);
     font-weight: 700;
 }
 
 .detalhes {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 10px;
     font-size: 15px;
@@ -65,8 +71,9 @@
 
 .infos-icones {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    gap: 35px;
+    gap: 16px clamp(20px, 2.5vw, 35px);
 }
 
 .infos-icones i {
@@ -87,10 +94,9 @@
 
 .cima,
 .baixo {
-    display: flex;
-    flex-direction: row;
-    gap: 9px;                  
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 9px;
 }
 
 .recomendacoes {
@@ -103,10 +109,6 @@
 }
 
 .recomendacoes .titulo {
-    display: grid;
-    grid-template-columns: 1fr 180px 89px;   
-    column-gap: 20px;
-    align-items: center;
     padding: 0 8px 12px;
 }
 
@@ -123,12 +125,12 @@
     align-items: center;
     gap: 20px;
     color: var(--texto-principal);
-    font-size: 30px;
+    font-size: clamp(22px, 2.2vw, 30px);
     font-weight: 400;
 }
 
 .titulo-texto span {
-    width: 40px;   
+    width: 40px;
 }
 
 .titulo-texto h2 {
@@ -136,14 +138,38 @@
     font-weight: inherit;
 }
 
-.capa-recomendacoes img{
-    height: 250px;
-    width: 250px;
+.capa-recomendacoes {
+    width: 100%;
+}
+
+.capa-recomendacoes img {
+    display: block;
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    margin: 0 auto;
     border-radius: 10px;
 }
 
 .info-musica {
-    text-align: center ;
+    text-align: center;
+}
+
+.info-musica h3 {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--texto-principal);
+}
+
+.info-musica p {
+    font-size: 12px;
+    color: var(--texto-suave);
+}
+
+.info-musica p:hover {
+    text-decoration: underline;
 }
 
 .rec-cima {
@@ -151,13 +177,14 @@
     flex-direction: column;
     gap: 15px;
 }
+
 .outras-doartista {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
-.capa-recomendacoes:hover{
+.capa-recomendacoes:hover {
     cursor: pointer;
 }
 
@@ -165,19 +192,32 @@
     box-shadow: 3px 3px 8px var(--vermelho);
 }
 
-
-
 .musicas-recomendadas {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    padding: 8px;                 
+    padding: 8px;
     border-radius: 14px;
     background-color: transparent;
     cursor: pointer;
+    min-width: 0;
 }
 
 .musicas-recomendadas:hover {
     background-color: var(--fundo-card-hover);
+}
+
+@media (max-width: 1200px) {
+    .cima,
+    .baixo {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 800px) {
+    .cima,
+    .baixo {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }

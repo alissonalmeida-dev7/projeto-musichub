@@ -207,6 +207,7 @@
     cursor: pointer;
     width: 80%;
     padding: 8px;
+    justify-self: center;   
 }
 
 .card-capa:hover {
@@ -294,5 +295,5 @@
 .top-rankings,
 .estilos,
 .descobertas {
-    margin-top: 100px;
+    margin-top: 40px;
 }
