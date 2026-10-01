@@ -23,7 +23,6 @@
   border-radius: 50%;
   object-fit: cover;
   background: #ccc;
-  box-shadow: 4px 4px 15px var(--vermelho);
 }
 
 .artista-info {

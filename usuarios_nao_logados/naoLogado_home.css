@@ -286,6 +286,18 @@
   margin-top: 40px;
 }
 
+.acoes {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.acoes a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
 .sessao {
   background-color: #e53e3e;
   color: #ffffff;
@@ -296,9 +308,10 @@
   font-weight: 600;
   cursor: pointer;
   width: fit-content;
-  margin-bottom: 12px;
+  margin-bottom: 0;
   transition: background-color 0.2s ease;
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 5px;
 }
