@@ -1,0 +1,161 @@
+/* ===== TELA DE ARTISTA ===== */
+
+/* cartões do painel central */
+.artista,
+.destaques {
+  padding: 20px;
+  border: 1px solid var(--borda-card);
+  border-radius: 20px;
+}
+
+.artista {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin-bottom: 20px;
+}
+
+/* ---------- Artista ---------- */
+.artista-foto {
+  width: 300px;
+  height: 300px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #ccc;
+  box-shadow: 4px 4px 15px var(--vermelho);
+}
+
+.artista-info {
+  min-width: 0;
+}
+
+.artista-info h1 {
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+.artista-genero {
+  margin: 4px 0 12px;
+  font-size: 20px;
+}
+
+.artista-acoes {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 20px;
+  white-space: nowrap;
+}
+
+.botao-inscrever {
+  width: 150px;
+  height: 50px;
+  border-radius: 10px;
+  background: var(--vermelho);
+  color: var(--texto-principal);
+  font: inherit;
+  font-size: 25px;
+}
+
+/* ---------- Títulos ---------- */
+.titulo-secao {
+  margin-bottom: 20px;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.titulo-secao span {
+  color: var(--vermelho);
+}
+
+/* ---------- Álbuns ---------- */
+.carrossel {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.carrossel-botao {
+  font-size: 18px;
+}
+
+.lista-albuns {
+  flex: 1;
+  min-width: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  padding: 10px 15px 20px;
+}
+
+.album-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 0;
+}
+
+.album-card img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  object-fit: cover;
+  background: #ccc;
+  box-shadow: 4px 4px 15px var(--vermelho);
+}
+
+.album-card strong {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.album-card span {
+  font-size: 13px;
+}
+
+.destaques hr {
+  margin: 10px 0 30px;
+  border: 0;
+  border-top: 1px solid var(--vermelho);
+}
+
+/* ---------- Músicas ---------- */
+.musica {
+  display: grid;
+  grid-template-columns: 40px 1fr auto 60px;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 0;
+}
+
+.musica-numero {
+  font-size: 30px;
+  color: rgba(204, 204, 204, 0.8);
+}
+
+.musica-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.musica-info strong {
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.musica-info span {
+  font-size: 15px;
+  color: #ccc;
+}
+
+.musica-favoritar {
+  font-size: 20px;
+}
+
+.musica-duracao {
+  font-size: 20px;
+  color: #ccc;
+}
