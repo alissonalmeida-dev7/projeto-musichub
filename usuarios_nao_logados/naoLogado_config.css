@@ -253,3 +253,19 @@ div.valor {
   justify-content: center;
   gap: 5px;
 }
+
+/* ===== PÁGINA INFORMAÇÕES ===== */
+
+.pagina-informacoes .grid-tempo-conosco,
+.pagina-informacoes .grid-estilo-favorito,
+.pagina-informacoes .grid-musica-favorita,
+.pagina-informacoes .grid-artista-favorito,
+.pagina-informacoes .grid-versao-site {
+  grid-template-columns: 1fr 300px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.pagina-informacoes .valor {
+  justify-self: center;
+}
