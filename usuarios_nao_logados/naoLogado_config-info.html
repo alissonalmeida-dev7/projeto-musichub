@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Configurações - MusicHub</title>
-    <link rel="stylesheet" href="naoLogado_config.css">
+    <link rel="stylesheet" href="../usuarios_nao_logados/naoLogado_config.css">
     <link rel="stylesheet" href="../style/global.css">
     <link rel="shortcut icon" href="../imgs/Logo_superior_esquerdo-MusicHub.svg" type="image/x-icon">
 
@@ -33,17 +33,19 @@
 
         <nav class="menu-lateral-esquerdo">
             <div class="menu-grupo">
-                <a href="../home/home.html" class="home-icone"><img src="../imgs/home.svg" alt="Home"></a>
-                <a href="../explore/explore.html"><i class="fa-regular fa-compass"></i></a>
-                <a href="../favoritos/favoritos.html"><i class="fa-regular fa-heart"></i></a>
-                <a href="../capsulaSonora/capsula.html"><img src="../imgs/musicas.svg" alt="Músicas"></a>
+                <a href="../usuarios_nao_logados/naoLogado_home.html" class="home-icone"><img src="../imgs/home.svg"
+                        alt="Home"></a>
+                <a href="../usuarios_nao_logados/naoLogado_explore.html"><i class="fa-regular fa-compass"></i></a>
+                <a href="../usuarios_nao_logados/naoLogado_favoritos.html"><i class="fa-regular fa-heart"></i></a>
+                <a href="../usuarios_nao_logados/naoLogado_capsula.html"><img src="../imgs/musicas.svg"
+                        alt="Músicas"></a>
             </div>
 
             <hr>
 
             <div class="menu-grupo">
-                <a href="../configurações/conta.html" class="ativo"><img src="../imgs/configuracoes-cheio.svg"
-                        alt="Configurações"></a>
+                <a href="../usuarios_nao_logados/naoLogado_config-conta.html" class="ativo"><img
+                        src="../imgs/configuracoes-cheio.svg" alt="Configurações"></a>
                 <a href="../login/login.html"><img src="../imgs/sair.svg" alt="Sair"></a>
             </div>
         </nav>
@@ -167,47 +169,67 @@
                 <h1 class="configuracoes-titulos">Configurações</h1>
 
                 <nav class="configuracoes-aba">
-                    <a href="../configurações/conta.html" class="item-aba">Conta</a>
+                    <a href="../usuarios_nao_logados/naoLogado_config-conta.html" class="item-aba">Conta</a>
                     <a href="#" class="item-aba-ativa">Informações</a>
-                    <a href="../configurações/personalizar.html" class="item-aba">Personalizar perfil</a>
+                    <a href="../usuarios_nao_logados/naoLogado_config-personalizar.html" class="item-aba">Personalizar
+                        perfil</a>
                 </nav>
 
                 <hr class="divisao" />
             </div>
 
-            <h2 class="configuracoes-titulo">Seu Tempo Conosco</h2>
             <div class="grid-tempo-conosco">
-                <p class="configuracoes-subtitulo">Seu tempo de Streaming no nosso app: </p>
-                <h3>
-                    <span class="letra-vermelha">47</span> Horas e <span class="letra-vermelha">25</span> minutos!
+                <div class="texto-grupo">
+                    <h2 class="configuracoes-titulo">Seu Tempo Conosco</h2>
+                    <p class="configuracoes-subtitulo">Seu tempo de Streaming no nosso app:</p>
+                </div>
+                <h3 class="valor">
+                    <span class="letra-vermelha">47</span> Horas e <span class="letra-vermelha">25</span> minutos<span
+                        class="letra-vermelha">!</span>
                 </h3>
             </div>
 
-            <h2 class="configuracoes-titulo">Estilo Favorito</h2>
             <div class="grid-estilo-favorito">
-                <p class="configuracoes-subtitulo">Seu estilo de música mais escutado: </p>
-                <img class="imagem-grande" src="../imgs/playlist-funk-paulista.png" alt="">
-                <span></span>
-                <h3>
-                    Funk <span class="letra-vermelha">paulista</span>
-                </h3>
+                <div class="texto-grupo">
+                    <h2 class="configuracoes-titulo">Estilo Favorito</h2>
+                    <p class="configuracoes-subtitulo">Seu estilo de música mais escutado:</p>
+                </div>
+                <div class="valor">
+                    <img class="imagem-capa" src="../imgs/playlist-funk-paulista.png" alt="">
+                    <h3>Funk <span class="letra-vermelha">Paulista</span></h3>
+                </div>
             </div>
 
-            <h2 class="configuracoes-titulo">Música Favorita</h2>
             <div class="grid-musica-favorita">
-                <p class="configuracoes-subtitulo">A sua música mais escutada foi: </p>
-                <img src="../imgs/Artistas-Mc-ig.png" alt="">
-                <span></span>
-                <h3>
-                    Sorriso <span class="letra-vermelha">no</span> rosto <span class="letra-vermelha">(</span>Mc <span
-                        class="letra-vermelha">IG)</span>
-                </h3>
+                <div class="texto-grupo">
+                    <h2 class="configuracoes-titulo">Música Favorita</h2>
+                    <p class="configuracoes-subtitulo">A sua música mais escutada foi:</p>
+                </div>
+                <div class="valor">
+                    <img class="imagem-capa" src="../imgs/novidades_semana-Sorriso_no_rosto.png" alt="">
+                    <h3>Sorriso <span class="letra-vermelha">no</span> Rosto <span class="letra-vermelha">(</span>Mc
+                        <span class="letra-vermelha">IG)</span>
+                    </h3>
+                </div>
             </div>
 
-            <h2 class="configuracoes-titulo">Versão do site</h2>
+            <div class="grid-artista-favorito">
+                <div class="texto-grupo">
+                    <h2 class="configuracoes-titulo">Artista favorito</h2>
+                    <p class="configuracoes-subtitulo">Seu artista preferido foi:</p>
+                </div>
+                <div class="valor">
+                    <img class="imagem-artista" src="../imgs/Artistas-Mc-ig.png" alt="">
+                    <h3>Mc <span class="letra-vermelha">IG</span></h3>
+                </div>
+            </div>
+
             <div class="grid-versao-site">
-                <p class="configuracoes-subtitulo">Versão atual do nosso aplicativo: </p>
-                <h3>
+                <div class="texto-grupo">
+                    <h2 class="configuracoes-titulo">Versão do site</h2>
+                    <p class="configuracoes-subtitulo">Versão atual do nosso aplicativo:</p>
+                </div>
+                <h3 class="valor">
                     <span class="letra-vermelha">1.0</span>
                 </h3>
             </div>
@@ -250,3 +272,5 @@
         </main>
     </div>
 </body>
+
+</html>
